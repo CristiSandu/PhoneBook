@@ -1,0 +1,1 @@
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\AgendaTelefonica.UWP.csproj;x86

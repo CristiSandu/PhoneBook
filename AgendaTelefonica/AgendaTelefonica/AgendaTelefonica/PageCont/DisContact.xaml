@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AgendaTelefonica.PageCont.DisContact">
+
+    <NavigationPage.TitleView>
+        <Label Text="Display Contact" FontSize="Large" TextColor="White" FontAttributes="Bold" />
+    </NavigationPage.TitleView>
+
+    <StackLayout Padding="20,50,20,20" Spacing="40">
+        <Label Text="Corina" FontSize="Large" FontAttributes="Bold" />
+        <Label Text="Sandu" FontSize="Large" FontAttributes="Bold"/>
+        <Label Text="0724364273" FontSize="Large" FontAttributes="Bold"/>
+        <Label Text="asdfgge@gmail.com" FontSize="Large" FontAttributes="Bold"/>
+        <Button Text="Save" />
+        <Button Text="Call" />
+        <Button x:Name ="backBtn" Text="Back" Clicked="backBtn_Clicked" />
+    </StackLayout>
+</ContentPage>

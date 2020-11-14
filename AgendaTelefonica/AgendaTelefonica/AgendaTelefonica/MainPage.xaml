@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="AgendaTelefonica.MainPage"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            xmlns:local="clr-namespace:AgendaTelefonica.PagesTab"
+            NavigationPage.HasNavigationBar="False">
+    
+  <NavigationPage Title="Favorite" >
+        <x:Arguments>
+            <local:Favorite />
+           
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="History">
+        <x:Arguments>
+            <local:History   />
+
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Contacts" >
+        <x:Arguments>
+            <local:Contacts  />
+        </x:Arguments>
+    </NavigationPage>
+
+
+
+</TabbedPage>

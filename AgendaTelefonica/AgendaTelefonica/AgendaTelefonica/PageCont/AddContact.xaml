@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AgendaTelefonica.PageCont.AddContact">
+
+    <NavigationPage.TitleView>
+        <Label Text="Add Contact" FontSize="Large" TextColor="White" FontAttributes="Bold" />
+    </NavigationPage.TitleView>
+    
+    <StackLayout  Padding="15,25,15,10">
+        <Entry x:Name="numeContact" Placeholder="First Name"/>
+        <Entry x:Name="prenumeContact" Placeholder="Second Name"/>
+        <Entry x:Name="nrTelefon" Placeholder="Phone Number"/>
+        <Entry x:Name="email" Placeholder="Email"/>
+        <Switch x:Name="addFavorite" />
+        <Button x:Name="saveBtn" Text="Save"/>
+        <Button x:Name="deleteBtn" Text="Delete"/>
+        <Button x:Name="cancelBtn" Text="Cancel"/>
+    </StackLayout>
+</ContentPage>
