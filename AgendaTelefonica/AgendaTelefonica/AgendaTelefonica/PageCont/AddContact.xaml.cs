@@ -16,5 +16,10 @@ namespace AgendaTelefonica.PageCont
         {
             InitializeComponent();
         }
+
+        private async void cancelBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
     }
 }

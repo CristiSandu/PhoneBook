@@ -15,6 +15,6 @@
         <Switch x:Name="addFavorite" />
         <Button x:Name="saveBtn" Text="Save"/>
         <Button x:Name="deleteBtn" Text="Delete"/>
-        <Button x:Name="cancelBtn" Text="Cancel"/>
+        <Button x:Name="cancelBtn" Text="Cancel" Clicked="cancelBtn_Clicked"/>
     </StackLayout>
 </ContentPage>
