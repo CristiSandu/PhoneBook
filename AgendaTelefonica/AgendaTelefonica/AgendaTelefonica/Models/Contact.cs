@@ -26,7 +26,6 @@ namespace AgendaTelefonica.Models
 
         public byte[] profilPicture { get; set; }
     
-    
 
         public  SQLiteConnection getConnection()
         {

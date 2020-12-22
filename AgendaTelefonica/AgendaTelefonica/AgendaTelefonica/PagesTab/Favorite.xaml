@@ -7,11 +7,16 @@
         <Label Text="Favorite" FontSize="Large" TextColor="White" FontAttributes="Bold" />
     </NavigationPage.TitleView>
 
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <ListView x:Name="favoriteListView" ItemSelected="favoriteListView_ItemSelected" >
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell Height="65">
+                    <StackLayout Orientation="Horizontal">
+                        <Label x:Name="nameContact" Text="{Binding firstName}" VerticalOptions="Center" FontSize="Medium"/>
+                        <Label x:Name="secondName" Text="{Binding secondName}" VerticalOptions="Center" FontSize="Medium"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 </ContentPage>

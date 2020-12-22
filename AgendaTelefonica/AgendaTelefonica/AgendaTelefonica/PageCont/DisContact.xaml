@@ -1,23 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
              x:Class="AgendaTelefonica.PageCont.DisContact">
 
     <NavigationPage.TitleView>
         <Label Text="Display Contact" FontSize="Large" TextColor="White" FontAttributes="Bold" />
     </NavigationPage.TitleView>
 
-    <StackLayout Padding="20,50,20,20" Spacing="40">
-        <Label x:Name="firstName" Text="{Binding firstName}" FontSize="Large" FontAttributes="Bold" />
-        <Label x:Name="secondName" Text="{Binding secondName}" FontSize="Large" FontAttributes="Bold"/>
-        <Label x:Name="phoneNumber" Text="{Binding phoneNumber}" FontSize="Large" FontAttributes="Bold"/>
-        <Label x:Name="email" Text="{Binding email}" FontSize="Large" FontAttributes="Bold"/>
-        <StackLayout>
-            <Button x:Name="callBtn" Text="Call" Clicked="callBtn_Clicked" />
-            <Button x:Name ="backBtn" Text="Back" Clicked="backBtn_Clicked" />
+    <ScrollView>
+        <StackLayout Padding="20,50,20,20" Spacing="40">
+            <ic:CircleImage x:Name="contactPhoto" WidthRequest="200" HeightRequest="200" Aspect="AspectFill" />
+            <Label x:Name="firstName" Text="{Binding firstName}" FontSize="Large" FontAttributes="Bold" />
+            <Label x:Name="secondName" Text="{Binding secondName}" FontSize="Large" FontAttributes="Bold"/>
+            <Label x:Name="phoneNumber" Text="{Binding phoneNumber}" FontSize="Large" FontAttributes="Bold"/>
+            <Label x:Name="email" Text="{Binding email}" FontSize="Large" FontAttributes="Bold"/>
+            <StackLayout>
+                <Button x:Name="callBtn" Text="Call" Clicked="callBtn_Clicked" />
+                <Button x:Name ="backBtn" Text="Back" Clicked="backBtn_Clicked" />
+            </StackLayout>
         </StackLayout>
-    </StackLayout>
-    
-    
-  
+    </ScrollView>
+
+
 </ContentPage>

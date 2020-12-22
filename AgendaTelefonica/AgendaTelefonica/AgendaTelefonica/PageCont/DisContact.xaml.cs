@@ -8,15 +8,37 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using AgendaTelefonica.PageCont;
 using Xamarin.Essentials;
+using SQLite;
+using AgendaTelefonica.Models;
+using System.IO;
 
 namespace AgendaTelefonica.PageCont
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DisContact : ContentPage
     {
+        Models.Contact _cont;
+        SQLiteConnection _conn ;
         public DisContact()
         {
             InitializeComponent();
+            _cont = (Models.Contact)BindingContext;
+        }
+
+        public DisContact(Models.Contact contact)
+        {
+            InitializeComponent();
+            _cont = contact;
+            firstName.Text = _cont.firstName;
+            secondName.Text = _cont.secondName;
+            phoneNumber.Text = _cont.phoneNumber;
+            email.Text = _cont.email;
+            byte[] b = _cont.profilPicture;
+            if (b != null)
+            {
+                Stream ms = new MemoryStream(b);
+                contactPhoto.Source = ImageSource.FromStream(() => ms);
+            }
         }
 
         private async void backBtn_Clicked(object sender, EventArgs e)
@@ -24,12 +46,23 @@ namespace AgendaTelefonica.PageCont
             await Navigation.PopToRootAsync();
         }
 
-        private void callBtn_Clicked(object sender, EventArgs e)
+        private async void callBtn_Clicked(object sender, EventArgs e)
         {
-           if (call(phoneNumber.Text) )
+            if (call(phoneNumber.Text))
             {
+                _conn = new SQLiteConnection(App.DataBaseLocation);
+                _conn.CreateTable<HistoryElem>();
+                DateTime dateTime = DateTime.Now;
+                HistoryElem historyElem = new HistoryElem
+                {
+                    id_Contact = _cont.id,
+                    date = dateTime
+                };
 
+                _conn.Insert(historyElem);
+                _conn.Close();
             }
+            await Navigation.PopToRootAsync();
         }
 
         public bool call(string phoneNumber)

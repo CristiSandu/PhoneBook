@@ -46,10 +46,8 @@ namespace AgendaTelefonica.PagesTab
         {
             if (e.SelectedItem != null)
             {
-                await Navigation.PushAsync(new DisContact
-                {
-                    BindingContext = e.SelectedItem as Models.Contact
-                });
+                Models.Contact cont = e.SelectedItem as Models.Contact;
+                await Navigation.PushAsync(new DisContact(cont));
             }
         }
     }

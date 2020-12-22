@@ -11,6 +11,7 @@ using AgendaTelefonica.Models;
 using System.Text.RegularExpressions;
 using SQLite;
 using System.Net.Mail;
+using System.IO;
 
 namespace AgendaTelefonica.PageCont
 {
@@ -18,6 +19,7 @@ namespace AgendaTelefonica.PageCont
     public partial class AddContact : ContentPage
     {
         SQLiteConnection conn;
+        byte[] photoSave;
         public AddContact()
         {
             InitializeComponent();
@@ -35,12 +37,25 @@ namespace AgendaTelefonica.PageCont
                     Title = "Pick a photo!"
                 });
                 var stream = await result_photo.OpenReadAsync();
+                
                 contactPhoto.Source = ImageSource.FromStream(() => stream);
+                photoSave = GetImageBytes(stream);
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"CapturePhotoAsync THREW: {ex.Message}");
             }
+        }
+
+        private byte[] GetImageBytes(Stream stream)
+        {
+            byte[] ImageBytes;
+            using (var memoryStream = new System.IO.MemoryStream())
+            {
+                stream.CopyTo(memoryStream);
+                ImageBytes = memoryStream.ToArray();
+            }
+            return ImageBytes;
         }
 
         private async void saveBtn_Clicked(object sender, EventArgs e)
@@ -51,11 +66,11 @@ namespace AgendaTelefonica.PageCont
                 secondName = prenumeContact.Text,
                 phoneNumber = nrTelefon.Text,
                 email = email.Text,
-                favorite = addFavorite.IsEnabled,
+                favorite = addFavorite.IsToggled,
+                profilPicture = photoSave
             };
             string patternPhoneNumber = "(0[0-9]{9})$";
-            //string patternEmailAddress = "^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$";
-
+           
             Match matchPhoneNumber = Regex.Match(nrTelefon.Text, patternPhoneNumber);
             
 
@@ -65,6 +80,7 @@ namespace AgendaTelefonica.PageCont
                     await DisplayAlert("Atentie!", "Numarul introdus nu este valid!", "OK");
                 if (!IsValid(email.Text))
                     await DisplayAlert("Atentie!", "Email-ul introdus nu este valid!", "OK");
+
 
             }
             else
