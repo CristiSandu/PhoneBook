@@ -21,6 +21,7 @@ namespace AgendaTelefonica.PagesTab
         private async void addContact_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new AddContact());
+
         }
     }
 }

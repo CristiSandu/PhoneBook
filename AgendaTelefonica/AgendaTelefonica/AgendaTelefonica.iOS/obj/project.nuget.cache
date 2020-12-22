@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "YyUyHRjj2My7szI+QgmkIpH35MecuhEBNonIO8ckMDh9Ipi6iy631iCXgX09Sl5NvTMn4ojwR3C1Z3XFW/VWvw==",
+  "dgSpecHash": "mKG/NfW0fFK27gsh8/d2u+D/NyeA1/GNFh7E6o0Pj6Wc1BKV1eRBCXazXikZzIywC27zIBZN+vUYR71fmQTrAA==",
   "success": true,
   "projectFilePath": "S:\\Cristi\\App-Xamarin\\AgendaTelefonica\\AgendaTelefonica\\AgendaTelefonica\\AgendaTelefonica.iOS\\AgendaTelefonica.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\cryst\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\cryst\\.nuget\\packages\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
+    "C:\\Users\\cryst\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\cryst\\.nuget\\packages\\xam.plugins.forms.imagecircle\\3.0.0.5\\xam.plugins.forms.imagecircle.3.0.0.5.nupkg.sha512",
+    "C:\\Users\\cryst\\.nuget\\packages\\xamarin.essentials\\1.6.0\\xamarin.essentials.1.6.0.nupkg.sha512",
+    "C:\\Users\\cryst\\.nuget\\packages\\xamarin.forms\\4.8.0.1821\\xamarin.forms.4.8.0.1821.nupkg.sha512"
   ],
   "logs": []
 }
