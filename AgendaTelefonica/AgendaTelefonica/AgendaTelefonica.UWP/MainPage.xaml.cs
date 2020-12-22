@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -20,8 +21,9 @@ namespace AgendaTelefonica.UWP
         public MainPage()
         {
             this.InitializeComponent();
-
-            LoadApplication(new AgendaTelefonica.App());
+            var documentsPath = ApplicationData.Current.LocalFolder.Path;
+            var fullPath = Path.Combine(documentsPath, "contactsDb.sqlite");
+            LoadApplication(new AgendaTelefonica.App(fullPath));
         }
     }
 }

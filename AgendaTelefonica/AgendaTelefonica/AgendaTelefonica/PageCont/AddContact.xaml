@@ -10,13 +10,13 @@
 
     <StackLayout  Padding="15,25,15,10" Spacing="10">
         <ic:CircleImage x:Name="contactPhoto" WidthRequest="200" HeightRequest="200" Aspect="AspectFill" />
-        <Entry x:Name="numeContact" Placeholder="First Name"/>
+        <Entry x:Name="numeContact" Placeholder="First Name" />
         <Entry x:Name="prenumeContact" Placeholder="Second Name"/>
         <Entry x:Name="nrTelefon" Placeholder="Phone Number"/>
         <Entry x:Name="email" Placeholder="Email"/>
         <Switch x:Name="addFavorite" />
-        <Button x:Name="saveBtn" Text="Save"/>
-        <Button x:Name="deleteBtn" Text="Delete"/>
+        <Button x:Name="saveBtn" Text="Save" Clicked="saveBtn_Clicked"/>
+        <Button x:Name="deleteBtn" Text="Delete" Clicked="deleteBtn_Clicked"/>
         <Button x:Name="cancelBtn" Text="Cancel" Clicked="cancelBtn_Clicked"/>
         <Button x:Name="addPhoto" Text="Add Photo" Clicked="addPhoto_Clicked"/>
     </StackLayout>

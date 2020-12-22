@@ -11,9 +11,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="IMG\contact_default.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Resizetizer.NT" Version="0.2.0" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
     <PackageReference Include="Xamarin.Forms" Version="4.8.0.1821" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SharedImage Include="IMG\contact_default.svg" BaseSize ="200,200"  />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,10 +42,5 @@
     <EmbeddedResource Update="PagesTab\History.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="IMG\" />
-    <Folder Include="Models\" />
   </ItemGroup>
 </Project>

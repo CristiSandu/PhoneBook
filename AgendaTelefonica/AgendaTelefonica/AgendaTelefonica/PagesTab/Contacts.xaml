@@ -1,30 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
              x:Class="AgendaTelefonica.PagesTab.Contacts">
     <NavigationPage.TitleView>
         <StackLayout Orientation="Horizontal" Padding="0,0,10,0">
             <Label Text="Contacts" FontSize="Large" TextColor="White" FontAttributes="Bold" />
-            
-            <Picker Title="Setings" TitleColor="White"  HorizontalOptions="EndAndExpand">
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>Baboon</x:String>
-                        <x:String>Capuchin Monkey</x:String>
-                        <x:String>Blue Monkey</x:String>
-                        <x:String>Squirrel Monkey</x:String>
-                        <x:String>Golden Lion Tamarin</x:String>
-                        <x:String>Howler Monkey</x:String>
-                        <x:String>Japanese Macaque</x:String>
-                    </x:Array>
-                </Picker.ItemsSource>
-            </Picker>
         </StackLayout>
     </NavigationPage.TitleView>
 
     <StackLayout Padding="20">
         <Button x:Name="addContact" Text="Add Contact" Clicked="addContact_Clicked"/>
-       
+        <ListView x:Name="contactsListView" ItemSelected="contactsListView_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Height="65">
+                        <StackLayout Orientation="Horizontal">
+                            <Label x:Name="nameContact" Text="{Binding firstName}" VerticalOptions="Center" FontSize="Medium"/>
+                            <Label x:Name="secondName" Text="{Binding secondName}" VerticalOptions="Center" FontSize="Medium"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </StackLayout>
-    
 </ContentPage>

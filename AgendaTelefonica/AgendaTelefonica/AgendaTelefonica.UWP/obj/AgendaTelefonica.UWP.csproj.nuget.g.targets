@@ -19,5 +19,6 @@
     <Import Project="$(NuGetPackageRoot)netstandard.library\2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('$(NuGetPackageRoot)netstandard.library\2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.net.native.compiler\2.2.9-rel-29512-01\build\Microsoft.Net.Native.Compiler.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.net.native.compiler\2.2.9-rel-29512-01\build\Microsoft.Net.Native.Compiler.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.netcore.universalwindowsplatform\6.2.11\build\Microsoft.NetCore.UniversalWindowsPlatform.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.netcore.universalwindowsplatform\6.2.11\build\Microsoft.NetCore.UniversalWindowsPlatform.targets')" />
+    <Import Project="$(NuGetPackageRoot)resizetizer.nt\0.2.0\buildTransitive\Resizetizer.NT.targets" Condition="Exists('$(NuGetPackageRoot)resizetizer.nt\0.2.0\buildTransitive\Resizetizer.NT.targets')" />
   </ImportGroup>
 </Project>

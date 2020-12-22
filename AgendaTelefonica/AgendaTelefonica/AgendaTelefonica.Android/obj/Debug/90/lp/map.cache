@@ -1,5 +1,6 @@
 FormsViewGroup
 ImageCircle.Forms.Plugin
+SQLitePCLRaw.lib.e_sqlite3.android
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Core.Runtime
 Xamarin.Android.Arch.Lifecycle.Common
