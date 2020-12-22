@@ -35,5 +35,6 @@
 
   <ItemGroup>
     <Folder Include="IMG\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 </Project>

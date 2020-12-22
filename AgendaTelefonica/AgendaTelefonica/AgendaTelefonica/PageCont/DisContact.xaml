@@ -12,8 +12,11 @@
         <Label Text="Sandu" FontSize="Large" FontAttributes="Bold"/>
         <Label Text="0724364273" FontSize="Large" FontAttributes="Bold"/>
         <Label Text="asdfgge@gmail.com" FontSize="Large" FontAttributes="Bold"/>
-        <Button Text="Save" />
-        <Button Text="Call" />
-        <Button x:Name ="backBtn" Text="Back" Clicked="backBtn_Clicked" />
+        <StackLayout>
+            <Button Text="Save" />
+            <Button Text="Call" />
+            <Button x:Name ="backBtn" Text="Back" Clicked="backBtn_Clicked" />
+        </StackLayout>
     </StackLayout>
+  
 </ContentPage>

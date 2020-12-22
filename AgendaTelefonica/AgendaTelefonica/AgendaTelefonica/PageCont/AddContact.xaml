@@ -6,7 +6,7 @@
     <NavigationPage.TitleView>
         <Label Text="Add Contact" FontSize="Large" TextColor="White" FontAttributes="Bold" />
     </NavigationPage.TitleView>
-    
+
     <StackLayout  Padding="15,25,15,10">
         <Entry x:Name="numeContact" Placeholder="First Name"/>
         <Entry x:Name="prenumeContact" Placeholder="Second Name"/>

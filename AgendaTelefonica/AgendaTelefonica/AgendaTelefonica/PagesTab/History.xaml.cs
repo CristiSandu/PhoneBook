@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using AgendaTelefonica.PageCont;
+using AgendaTelefonica.PageCont;
 
 namespace AgendaTelefonica.PagesTab
 {

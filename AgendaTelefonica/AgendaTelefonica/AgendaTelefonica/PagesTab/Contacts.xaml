@@ -5,7 +5,7 @@
     <NavigationPage.TitleView>
         <Label Text="Contacts" FontSize="Large" TextColor="White" FontAttributes="Bold" />
     </NavigationPage.TitleView>
-    
+
     <StackLayout Padding="20">
         <Button x:Name="addContact" Text="Add Contact" Clicked="addContact_Clicked"/>
     </StackLayout>

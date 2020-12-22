@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "a9B9SF8kza5US/6+jHUkgKESlhp7cFx6YxjNstD5qG1Z6k8bZyIiipTo4Xb8HNjzm6d7/qlE8PSUa9SVkn4V9A==",
+  "dgSpecHash": "Ix4wEj0CuWQ6vVMkvNLNQ3hw/LOMOCIfXSKwf+p0TbtUcntbKEra+A9wT3YjPPwgwXHkveO/2IwAnHrQ8hschA==",
   "success": true,
   "projectFilePath": "S:\\Cristi\\App-Xamarin\\AgendaTelefonica\\AgendaTelefonica\\AgendaTelefonica\\AgendaTelefonica.UWP\\AgendaTelefonica.UWP.csproj",
   "expectedPackageFiles": [
@@ -27,7 +27,7 @@
     "C:\\Users\\cryst\\.nuget\\packages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.1.9\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.1.9.nupkg.sha512",
     "C:\\Users\\cryst\\.nuget\\packages\\win2d.uwp\\1.20.0\\win2d.uwp.1.20.0.nupkg.sha512",
     "C:\\Users\\cryst\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
+    "C:\\Users\\cryst\\.nuget\\packages\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
   ],
   "logs": [
     {

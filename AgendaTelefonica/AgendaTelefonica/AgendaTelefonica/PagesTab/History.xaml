@@ -6,10 +6,10 @@
     <NavigationPage.TitleView>
         <Label Text="History" FontSize="Large" TextColor="White" FontAttributes="Bold" />
     </NavigationPage.TitleView>
-    
-   
-        <StackLayout>
-            <Button x:Name="dispContact" Text="Diplay Contact" Clicked="dispContact_Clicked"/>
-        </StackLayout>
-    
+
+
+    <StackLayout>
+        <Button x:Name="dispContact" Text="Diplay Contact" Clicked="dispContact_Clicked"/>
+    </StackLayout>
+
 </ContentPage>
