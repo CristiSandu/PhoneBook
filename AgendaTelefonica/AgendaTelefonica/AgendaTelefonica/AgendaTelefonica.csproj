@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <SharedImage Include="IMG\contact_default.svg" BaseSize ="200,200"  />
+    <SharedImage Include="IMG\contact_default.svg" BaseSize="10,10" />
   </ItemGroup>
 
   <ItemGroup>
@@ -40,6 +40,12 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="PagesTab\History.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Tools\SearchPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Tools\SeatingsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

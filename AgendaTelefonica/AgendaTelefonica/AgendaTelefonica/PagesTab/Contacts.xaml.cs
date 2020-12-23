@@ -10,6 +10,7 @@ using AgendaTelefonica.PageCont;
 using AgendaTelefonica.Models;
 using SQLite;
 using System.Collections.ObjectModel;
+using AgendaTelefonica.Tools;
 
 namespace AgendaTelefonica.PagesTab
 {
@@ -49,6 +50,18 @@ namespace AgendaTelefonica.PagesTab
                 Models.Contact cont = e.SelectedItem as Models.Contact;
                 await Navigation.PushAsync(new DisContact(cont));
             }
+        }
+
+        private async void deleteAllCont_Clicked(object sender, EventArgs e)
+        {
+            /*conn = contact.getConnection();
+            conn.CreateTable<Models.Contact>();
+            conn.DeleteAll<Models.Contact>();
+            conn.DeleteAll<HistoryElem>();
+            conn.Close();*/
+
+            await Navigation.PushAsync(new SearchPage());
+
         }
     }
 }

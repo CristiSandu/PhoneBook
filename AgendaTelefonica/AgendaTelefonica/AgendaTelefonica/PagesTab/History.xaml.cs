@@ -51,7 +51,7 @@ namespace AgendaTelefonica.PagesTab
 
         private async void dispContact_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new DisContact());
+            await Navigation.PushModalAsync(new Tools.SeatingsPage());
         }
 
         private void historyListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)

@@ -1,4 +1,5 @@
 ﻿using AgendaTelefonica.Models;
+using AgendaTelefonica.PageCont;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -38,9 +39,13 @@ namespace AgendaTelefonica.PagesTab
             conn.Close();
         }
 
-        private void favoriteListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void favoriteListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-
+            if (e.SelectedItem != null)
+            {
+                Models.Contact cont = e.SelectedItem as Models.Contact;
+                await Navigation.PushAsync(new DisContact(cont));
+            }
         }
     }
 }

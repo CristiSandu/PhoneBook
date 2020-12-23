@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AgendaTelefonica.Tools.SearchPage">
+
+
+    <NavigationPage.TitleView>
+        <SearchBar x:Name="searchBarContacts" Placeholder="Search Contacts" TextChanged="searchBarContacts_TextChanged" IsEnabled="True"   />
+
+    </NavigationPage.TitleView>
+    <StackLayout Padding="10">
+        <ListView x:Name="contactsSearchListView" ItemSelected="contactsSearchListView_ItemSelected"  HasUnevenRows="True" SeparatorVisibility="None" >
+            <ListView.ItemTemplate>
+                <DataTemplate >
+                    <ViewCell Height="65">
+                        <StackLayout Orientation="Horizontal">
+                            <Label x:Name="nameContact" Text="{Binding firstName}" VerticalOptions="Center" FontSize="Medium"/>
+                            <Label x:Name="secondName" Text="{Binding secondName}" VerticalOptions="Center" FontSize="Medium"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

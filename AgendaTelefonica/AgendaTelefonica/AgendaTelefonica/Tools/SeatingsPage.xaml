@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AgendaTelefonica.Tools.SeatingsPage">
+    <TableView Intent="Settings">
+        <TableRoot>
+            <TableSection Title="Theme">
+                <SwitchCell Text="Dark Mode" />
+                <SwitchCell Text="Default Mode" On="true" />
+            </TableSection>
+            <TableSection Title="About">
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="contact_default.png" />
+                        <Label Text="left"
+                                 TextColor="#f35e20" />
+                        <Label Text="right"
+                                 HorizontalOptions="EndAndExpand"
+                                 TextColor="#503026" />
+                    </StackLayout>
+                </ViewCell>
+            </TableSection>
+        </TableRoot>
+    </TableView>
+</ContentPage>

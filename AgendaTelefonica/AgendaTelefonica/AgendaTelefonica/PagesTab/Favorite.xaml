@@ -6,17 +6,19 @@
     <NavigationPage.TitleView>
         <Label Text="Favorite" FontSize="Large" TextColor="White" FontAttributes="Bold" />
     </NavigationPage.TitleView>
+    <StackLayout Padding="10">
+        <ListView x:Name="favoriteListView" ItemSelected="favoriteListView_ItemSelected" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Height="65">
+                        <StackLayout Orientation="Horizontal">
+                            <Label x:Name="nameContact" Text="{Binding firstName}" VerticalOptions="Center" FontSize="Medium"/>
+                            <Label x:Name="secondName" Text="{Binding secondName}" VerticalOptions="Center" FontSize="Medium"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 
-    <ListView x:Name="favoriteListView" ItemSelected="favoriteListView_ItemSelected" >
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell Height="65">
-                    <StackLayout Orientation="Horizontal">
-                        <Label x:Name="nameContact" Text="{Binding firstName}" VerticalOptions="Center" FontSize="Medium"/>
-                        <Label x:Name="secondName" Text="{Binding secondName}" VerticalOptions="Center" FontSize="Medium"/>
-                    </StackLayout>
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
 </ContentPage>

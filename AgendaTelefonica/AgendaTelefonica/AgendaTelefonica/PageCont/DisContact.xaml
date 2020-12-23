@@ -10,7 +10,7 @@
 
     <ScrollView>
         <StackLayout Padding="20,50,20,20" Spacing="40">
-            <ic:CircleImage x:Name="contactPhoto" WidthRequest="200" HeightRequest="200" Aspect="AspectFill" />
+            <ic:CircleImage x:Name="contactPhoto" WidthRequest="150" HeightRequest="150" Aspect="AspectFill" />
             <Label x:Name="firstName" Text="{Binding firstName}" FontSize="Large" FontAttributes="Bold" />
             <Label x:Name="secondName" Text="{Binding secondName}" FontSize="Large" FontAttributes="Bold"/>
             <Label x:Name="phoneNumber" Text="{Binding phoneNumber}" FontSize="Large" FontAttributes="Bold"/>

@@ -46,6 +46,17 @@ namespace AgendaTelefonica.PageCont
                 Console.WriteLine($"CapturePhotoAsync THREW: {ex.Message}");
             }
         }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            if (photoSave != null)
+            {
+                Stream ms = new MemoryStream(photoSave);
+                contactPhoto.Source = ImageSource.FromStream(() => ms);
+                contactPhoto.Aspect = Aspect.AspectFill ;
+            }
+        }
 
         private byte[] GetImageBytes(Stream stream)
         {
@@ -70,7 +81,7 @@ namespace AgendaTelefonica.PageCont
                 profilPicture = photoSave
             };
             string patternPhoneNumber = "(0[0-9]{9})$";
-           
+             
             Match matchPhoneNumber = Regex.Match(nrTelefon.Text, patternPhoneNumber);
             
 
@@ -80,8 +91,6 @@ namespace AgendaTelefonica.PageCont
                     await DisplayAlert("Atentie!", "Numarul introdus nu este valid!", "OK");
                 if (!IsValid(email.Text))
                     await DisplayAlert("Atentie!", "Email-ul introdus nu este valid!", "OK");
-
-
             }
             else
             {

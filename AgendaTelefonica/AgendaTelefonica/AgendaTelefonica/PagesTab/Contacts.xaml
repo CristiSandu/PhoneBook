@@ -10,6 +10,7 @@
     </NavigationPage.TitleView>
 
     <StackLayout Padding="20">
+        <Button x:Name="deleteAllCont" Text="--" Clicked="deleteAllCont_Clicked"/>
         <Button x:Name="addContact" Text="Add Contact" Clicked="addContact_Clicked"/>
         <ListView x:Name="contactsListView" ItemSelected="contactsListView_ItemSelected">
             <ListView.ItemTemplate>

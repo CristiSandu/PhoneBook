@@ -9,7 +9,7 @@
     </NavigationPage.TitleView>
 
     <StackLayout  Padding="15,25,15,10" Spacing="10">
-        <ic:CircleImage x:Name="contactPhoto" WidthRequest="200" HeightRequest="200" Aspect="AspectFill" />
+        <ic:CircleImage x:Name="contactPhoto" WidthRequest="150" HeightRequest="150" Aspect="AspectFit" />
         <Entry x:Name="numeContact" Placeholder="First Name" />
         <Entry x:Name="prenumeContact" Placeholder="Second Name"/>
         <Entry x:Name="nrTelefon" Placeholder="Phone Number"/>

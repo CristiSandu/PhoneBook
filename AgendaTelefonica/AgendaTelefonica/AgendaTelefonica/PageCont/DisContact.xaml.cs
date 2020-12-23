@@ -33,11 +33,20 @@ namespace AgendaTelefonica.PageCont
             secondName.Text = _cont.secondName;
             phoneNumber.Text = _cont.phoneNumber;
             email.Text = _cont.email;
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
             byte[] b = _cont.profilPicture;
             if (b != null)
             {
                 Stream ms = new MemoryStream(b);
                 contactPhoto.Source = ImageSource.FromStream(() => ms);
+            } else
+            {
+                contactPhoto.Source = "contact_default.png";
+                contactPhoto.Aspect = Aspect.AspectFit;
             }
         }
 
