@@ -8,6 +8,5 @@ namespace AgendaTelefonica.Models
     {
         public string Name { set; get; }
         public string Date { set; get; }
-
     }
 }

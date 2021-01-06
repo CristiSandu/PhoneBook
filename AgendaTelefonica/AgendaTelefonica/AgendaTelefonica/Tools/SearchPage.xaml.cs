@@ -71,5 +71,10 @@ namespace AgendaTelefonica.Tools
             var chars = text.Where(c => CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark).ToArray();
             return new string(chars).Normalize(NormalizationForm.FormC);
         }
+
+        private void searchBarContacts_SearchButtonPressed(object sender, EventArgs e)
+        {
+
+        }
     }
 }

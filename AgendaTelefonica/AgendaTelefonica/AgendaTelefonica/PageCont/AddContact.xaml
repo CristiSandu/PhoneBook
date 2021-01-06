@@ -7,17 +7,27 @@
     <NavigationPage.TitleView>
         <Label Text="Add Contact" FontSize="Large" TextColor="White" FontAttributes="Bold" />
     </NavigationPage.TitleView>
+    
+    <AbsoluteLayout Padding="0,10,0,0">
 
-    <StackLayout  Padding="15,25,15,10" Spacing="10">
-        <ic:CircleImage x:Name="contactPhoto" WidthRequest="150" HeightRequest="150" Aspect="AspectFit" />
-        <Entry x:Name="numeContact" Placeholder="First Name" />
-        <Entry x:Name="prenumeContact" Placeholder="Second Name"/>
-        <Entry x:Name="nrTelefon" Placeholder="Phone Number"/>
-        <Entry x:Name="email" Placeholder="Email"/>
-        <Switch x:Name="addFavorite" />
-        <Button x:Name="saveBtn" Text="Save" Clicked="saveBtn_Clicked"/>
-        <Button x:Name="deleteBtn" Text="Delete" Clicked="deleteBtn_Clicked"/>
-        <Button x:Name="cancelBtn" Text="Cancel" Clicked="cancelBtn_Clicked"/>
-        <Button x:Name="addPhoto" Text="Add Photo" Clicked="addPhoto_Clicked"/>
-    </StackLayout>
+        <!--<StackLayout  Padding="15,25,15,10" Spacing="10"  >-->
+        <ic:CircleImage x:Name="contactPhoto" WidthRequest="150" HeightRequest="150" Aspect="AspectFit"  AbsoluteLayout.LayoutBounds="10, 0, 390, 150"/>
+        <Entry x:Name="numeContact" Placeholder="First Name" AbsoluteLayout.LayoutBounds="10, 150 , 390, 40"/>
+        <Entry x:Name="prenumeContact" Placeholder="Second Name" AbsoluteLayout.LayoutBounds="10, 200 , 390, 40"/>
+        <Entry x:Name="nrTelefon" Placeholder="Phone Number" AbsoluteLayout.LayoutBounds="10, 250 , 390, 40"/>
+        <Entry x:Name="email" Placeholder="Email" AbsoluteLayout.LayoutBounds="10, 300 , 390, 40"/>
+        <Switch x:Name="addFavorite" AbsoluteLayout.LayoutBounds="10, 350 , 390, 40"/>
+        <Button x:Name="saveBtn" Text="Save" Clicked="saveBtn_Clicked" AbsoluteLayout.LayoutBounds="10, 400 , 390, 45"/>
+        <Button x:Name="deleteBtn" Text="Delete" Clicked="deleteBtn_Clicked" AbsoluteLayout.LayoutBounds="10, 450 , 390, 45"/>
+        <Button x:Name="cancelBtn" Text="Cancel" Clicked="cancelBtn_Clicked" AbsoluteLayout.LayoutBounds="10, 500 , 390, 45"/>
+
+        <Button x:Name="addPhoto" 
+                Text="" 
+                Clicked="addPhoto_Clicked" 
+                BackgroundColor="Transparent"
+                CornerRadius="100"
+                AbsoluteLayout.LayoutBounds="155, 40 , 100, 80"/>
+
+    </AbsoluteLayout>
+    
 </ContentPage>

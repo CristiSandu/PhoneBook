@@ -40,7 +40,7 @@ namespace AgendaTelefonica.PagesTab
                 var elem = getContactFromTel.ToList<Models.Contact>();
 
                 HistoryDispMod hdm = new HistoryDispMod {
-                    Name = $"Call {elem[0].firstName}  {elem[0].secondName}",
+                    Name = $"Call {elem[0].firstName} - {elem[0].secondName}",
                     Date = h.date.ToString() 
                 };
                 _historyList.Add(hdm);

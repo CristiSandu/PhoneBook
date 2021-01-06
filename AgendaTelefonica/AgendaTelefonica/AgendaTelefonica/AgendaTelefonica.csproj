@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -12,6 +12,8 @@
 
   <ItemGroup>
     <None Remove="IMG\contact_default.svg" />
+    <None Remove="IMG\plus.svg" />
+    <None Remove="IMG\search_circle.svg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,7 +25,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <SharedImage Include="IMG\contact_default.svg" BaseSize="10,10" />
+    <SharedImage Include="IMG\contact_default.svg" BaseSize="20,20" />
+    <SharedImage Include="IMG\plus.svg" BaseSize="45,45"/>
+    <SharedImage Include="IMG\search_circle.svg" BaseSize="45,45" />
   </ItemGroup>
 
   <ItemGroup>

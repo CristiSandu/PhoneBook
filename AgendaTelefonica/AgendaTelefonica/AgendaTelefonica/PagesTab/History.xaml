@@ -8,13 +8,12 @@
     </NavigationPage.TitleView>
 
 
-    <StackLayout Padding="20">
-        <Button x:Name="dispHistory" Text="Diplay Contact" Clicked="dispContact_Clicked"/>
-        <ListView x:Name="historyListView" ItemSelected="historyListView_ItemSelected" >
+    <StackLayout Padding="20,20,10,10">
+        <ListView x:Name="historyListView" ItemSelected="historyListView_ItemSelected" HasUnevenRows="True" SeparatorVisibility="None" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell Height="65">
-                        <StackLayout Spacing="1">
+                        <StackLayout Spacing="2">
                             <Label x:Name="nameContact" Text="{Binding Name}" VerticalOptions="Center" FontSize="Medium"/>
                             <Label x:Name="secondName" Text="{Binding Date}" VerticalOptions="Center" FontSize="Small"/>
                         </StackLayout>

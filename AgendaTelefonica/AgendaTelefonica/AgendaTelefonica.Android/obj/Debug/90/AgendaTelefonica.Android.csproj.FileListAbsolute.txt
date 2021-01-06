@@ -509,3 +509,13 @@ S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaT
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.Android\obj\Debug\90\android\assets\System.Buffers.dll
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.Android\obj\Debug\90\android\assets\System.Memory.dll
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.Android\obj\Debug\90\android\assets\System.Runtime.CompilerServices.Unsafe.dll
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.Android\obj\Debug\90\resizetize\r\drawable-hdpi\search_circle.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.Android\obj\Debug\90\resizetize\r\drawable-mdpi\search_circle.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.Android\obj\Debug\90\resizetize\r\drawable-xhdpi\search_circle.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.Android\obj\Debug\90\resizetize\r\drawable-xxhdpi\search_circle.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.Android\obj\Debug\90\resizetize\r\drawable-xxxhdpi\search_circle.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.Android\obj\Debug\90\resizetize\r\drawable-hdpi\plus.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.Android\obj\Debug\90\resizetize\r\drawable-mdpi\plus.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.Android\obj\Debug\90\resizetize\r\drawable-xhdpi\plus.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.Android\obj\Debug\90\resizetize\r\drawable-xxhdpi\plus.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.Android\obj\Debug\90\resizetize\r\drawable-xxxhdpi\plus.png

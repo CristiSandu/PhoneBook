@@ -4,19 +4,21 @@
              xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
              x:Class="AgendaTelefonica.PagesTab.Contacts">
     <NavigationPage.TitleView>
-        <StackLayout Orientation="Horizontal" Padding="0,0,10,0">
-            <Label Text="Contacts" FontSize="Large" TextColor="White" FontAttributes="Bold" />
+        <StackLayout Orientation="Horizontal" Padding="0,0,-15,0">
+            <Label Text="Contacts" FontSize="Large" TextColor="White" VerticalOptions="Center" FontAttributes="Bold" HorizontalOptions="StartAndExpand" />
+            <StackLayout Orientation="Horizontal" Spacing="-30" HorizontalOptions="EndAndExpand"> 
+                <Button x:Name="searchButton" ImageSource="search_circle.png" BackgroundColor="Transparent" Clicked="deleteAllCont_Clicked" VerticalOptions="CenterAndExpand" />
+                <Button x:Name="addContact" ImageSource="plus.png" BackgroundColor="Transparent" Clicked="addContact_Clicked" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
         </StackLayout>
     </NavigationPage.TitleView>
 
-    <StackLayout Padding="20">
-        <Button x:Name="deleteAllCont" Text="--" Clicked="deleteAllCont_Clicked"/>
-        <Button x:Name="addContact" Text="Add Contact" Clicked="addContact_Clicked"/>
+    <StackLayout Padding="20,10,20,10">
         <ListView x:Name="contactsListView" ItemSelected="contactsListView_ItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell Height="65">
-                        <StackLayout Orientation="Horizontal">
+                    <ViewCell Height="50">
+                        <StackLayout Orientation="Horizontal" Spacing="2">
                             <Label x:Name="nameContact" Text="{Binding firstName}" VerticalOptions="Center" FontSize="Medium"/>
                             <Label x:Name="secondName" Text="{Binding secondName}" VerticalOptions="Center" FontSize="Medium"/>
                         </StackLayout>
