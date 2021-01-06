@@ -24,7 +24,6 @@ namespace AgendaTelefonica.PageCont
         {
             InitializeComponent();
             contactPhoto.Source = "contact_default.svg";
-
         }
 
 
@@ -49,6 +48,7 @@ namespace AgendaTelefonica.PageCont
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            numeContact.Focus();
 
             if (photoSave != null)
             {
@@ -132,6 +132,11 @@ namespace AgendaTelefonica.PageCont
         private async void cancelBtn_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopAsync();
+        }
+
+        private void numeContact_Focused(object sender, FocusEventArgs e)
+        {
+
         }
     }
 }

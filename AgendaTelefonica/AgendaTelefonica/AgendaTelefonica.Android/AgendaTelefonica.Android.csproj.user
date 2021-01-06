@@ -2,7 +2,7 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <AndroidDesignerPreferredTheme>Theme.AppCompat.Light.NoActionBar</AndroidDesignerPreferredTheme>
-    <SelectedDevice>OnePlus A6013</SelectedDevice>
+    <SelectedDevice>pixel_3_xl_q_10_0_-_api_29</SelectedDevice>
     <DefaultDevice>pixel_3_xl_q_10_0_-_api_29</DefaultDevice>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
   </PropertyGroup>

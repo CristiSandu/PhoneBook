@@ -63,5 +63,10 @@ namespace AgendaTelefonica.PagesTab
             await Navigation.PushAsync(new SearchPage());
 
         }
+
+        private void callNumber_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

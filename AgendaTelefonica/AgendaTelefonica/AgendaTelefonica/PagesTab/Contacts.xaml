@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
              x:Class="AgendaTelefonica.PagesTab.Contacts">
+   
+    
     <NavigationPage.TitleView>
         <StackLayout Orientation="Horizontal" Padding="0,0,-15,0">
             <Label Text="Contacts" FontSize="Large" TextColor="White" VerticalOptions="Center" FontAttributes="Bold" HorizontalOptions="StartAndExpand" />
@@ -13,7 +15,9 @@
         </StackLayout>
     </NavigationPage.TitleView>
 
-    <StackLayout Padding="20,10,20,10">
+    
+    
+    <AbsoluteLayout Padding="10,10,20,10">
         <ListView x:Name="contactsListView" ItemSelected="contactsListView_ItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -26,5 +30,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-    </StackLayout>
+        <Button x:Name="callNumber" Text="Call" Clicked="callNumber_Clicked"  CornerRadius="90" AbsoluteLayout.LayoutBounds="160,540,70,70"/>
+    </AbsoluteLayout>
 </ContentPage>

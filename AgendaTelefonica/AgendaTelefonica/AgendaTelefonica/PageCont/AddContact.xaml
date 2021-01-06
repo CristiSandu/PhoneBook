@@ -12,7 +12,7 @@
 
         <!--<StackLayout  Padding="15,25,15,10" Spacing="10"  >-->
         <ic:CircleImage x:Name="contactPhoto" WidthRequest="150" HeightRequest="150" Aspect="AspectFit"  AbsoluteLayout.LayoutBounds="10, 0, 390, 150"/>
-        <Entry x:Name="numeContact" Placeholder="First Name" AbsoluteLayout.LayoutBounds="10, 150 , 390, 40"/>
+        <Entry x:Name="numeContact" Placeholder="First Name" AbsoluteLayout.LayoutBounds="10, 150 , 390, 40" />
         <Entry x:Name="prenumeContact" Placeholder="Second Name" AbsoluteLayout.LayoutBounds="10, 200 , 390, 40"/>
         <Entry x:Name="nrTelefon" Placeholder="Phone Number" AbsoluteLayout.LayoutBounds="10, 250 , 390, 40"/>
         <Entry x:Name="email" Placeholder="Email" AbsoluteLayout.LayoutBounds="10, 300 , 390, 40"/>

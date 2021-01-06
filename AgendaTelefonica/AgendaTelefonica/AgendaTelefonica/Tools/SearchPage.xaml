@@ -5,7 +5,7 @@
 
 
     <NavigationPage.TitleView>
-        <SearchBar x:Name="searchBarContacts" Placeholder="Search Contacts" TextChanged="searchBarContacts_TextChanged" />
+        <SearchBar x:Name="searchBarContacts" Placeholder="Search Contacts" TextChanged="searchBarContacts_TextChanged"  />
     </NavigationPage.TitleView>
     <StackLayout Padding="10,0,10,10">
         <ListView x:Name="contactsSearchListView" ItemSelected="contactsSearchListView_ItemSelected"  HasUnevenRows="True" SeparatorVisibility="None" >

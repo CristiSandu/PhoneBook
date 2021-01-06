@@ -8,8 +8,9 @@
     </NavigationPage.TitleView>
 
 
-    <StackLayout Padding="20,20,10,10">
-        <ListView x:Name="historyListView" ItemSelected="historyListView_ItemSelected" HasUnevenRows="True" SeparatorVisibility="None" >
+    <AbsoluteLayout Padding="20,20,10,10">
+        <ListView x:Name="historyListView" ItemSelected="historyListView_ItemSelected" HasUnevenRows="True" SeparatorVisibility="None" 
+                 >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell Height="65">
@@ -21,6 +22,8 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-    </StackLayout>
+
+        <Button x:Name="callNumber" Text="Call" Clicked="callNumber_Clicked" CornerRadius="90" AbsoluteLayout.LayoutBounds="150,530,70,70"/>
+    </AbsoluteLayout>
 
 </ContentPage>

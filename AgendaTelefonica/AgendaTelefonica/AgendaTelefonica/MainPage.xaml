@@ -16,7 +16,7 @@
     <NavigationPage Title="History">
         <x:Arguments>
             <local:History   />
-
+            
         </x:Arguments>
     </NavigationPage>
     <NavigationPage Title="Contacts" >

@@ -21,11 +21,14 @@ namespace AgendaTelefonica.Tools
         public SearchPage()
         {
             InitializeComponent();
+           
         }
 
+         
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            focus();
             SQLiteConnection conn = new SQLiteConnection(App.DataBaseLocation);
             //conn.CreateTable<Artists>();
             var contacts = conn.Table<Models.Contact>().ToList();
@@ -43,6 +46,12 @@ namespace AgendaTelefonica.Tools
                 await Navigation.PushAsync(new DisContact(cont));
             }
         }
+
+        public async void focus()
+        {
+            searchBarContacts.Focus();
+        }
+
 
         private void searchBarContacts_TextChanged(object sender, TextChangedEventArgs e)
         {
