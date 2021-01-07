@@ -6,16 +6,25 @@
    
     
     <NavigationPage.TitleView>
-        <StackLayout Orientation="Horizontal" Padding="0,0,-15,0">
             <Label Text="Contacts" FontSize="Large" TextColor="White" VerticalOptions="Center" FontAttributes="Bold" HorizontalOptions="StartAndExpand" />
-            <StackLayout Orientation="Horizontal" Spacing="-30" HorizontalOptions="EndAndExpand"> 
-                <Button x:Name="searchButton" ImageSource="search_circle.png" BackgroundColor="Transparent" Clicked="deleteAllCont_Clicked" VerticalOptions="CenterAndExpand" />
-                <Button x:Name="addContact" ImageSource="plus.png" BackgroundColor="Transparent" Clicked="addContact_Clicked" VerticalOptions="CenterAndExpand" />
-            </StackLayout>
-        </StackLayout>
     </NavigationPage.TitleView>
 
-    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Search"
+                 IconImageSource="search_circle.png"
+                 Order="Primary"
+                 Priority="0"
+                     Clicked="deleteAllCont_Clicked"/>
+        <ToolbarItem Order="Primary"
+                     IconImageSource="plus.png"
+                     Text="Add"
+                     Priority="1"
+                     Clicked="addContact_Clicked" />
+        <ToolbarItem x:Name ="settingsBtn" Order="Secondary"
+                     Text="Settings"
+                     Priority="2"
+                     Clicked="settingsBtn_Clicked" />
+    </ContentPage.ToolbarItems>
     
     <AbsoluteLayout Padding="10,10,20,10">
         <ListView x:Name="contactsListView" ItemSelected="contactsListView_ItemSelected">

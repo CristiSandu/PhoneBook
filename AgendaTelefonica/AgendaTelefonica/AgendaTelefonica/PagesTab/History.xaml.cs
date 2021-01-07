@@ -63,5 +63,20 @@ namespace AgendaTelefonica.PagesTab
         {
 
         }
+
+        private void searchBtn_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addContBtn_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void settingsBtn_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
