@@ -69,9 +69,9 @@ namespace AgendaTelefonica.PagesTab
 
         }
 
-        private void settingsBtn_Clicked(object sender, EventArgs e)
+        private async void settingsBtn_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new SeatingsPage());
         }
     }
 }
