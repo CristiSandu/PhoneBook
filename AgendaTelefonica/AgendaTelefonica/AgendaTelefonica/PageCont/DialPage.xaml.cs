@@ -30,8 +30,12 @@ namespace AgendaTelefonica.PageCont
         private void btnNr_Clicked(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
+
+
             if (dialModel.Number == null)
                 dialModel.Number += btn.Text;
+            else if (btn.Text == "C")
+                dialModel.Number = "";
             else if (dialModel.Number.Length < 10)
                 dialModel.Number += btn.Text;
 
