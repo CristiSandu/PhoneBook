@@ -29,6 +29,7 @@ namespace AgendaTelefonica.PagesTab
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            string nameContact;
             _conn = _cont.getConnection();
             _conn.CreateTable<Models.Contact>();
             _conn.CreateTable<HistoryElem>();
@@ -39,10 +40,17 @@ namespace AgendaTelefonica.PagesTab
                 var getContactFromTel = _conn.Query<Models.Contact>("SELECT * FROM Contact WHERE id = ?", h.id_Contact);
                 var elem = getContactFromTel.ToList<Models.Contact>();
 
-                HistoryDispMod hdm = new HistoryDispMod {
-                    Name = $"Call {elem[0].firstName} - {elem[0].secondName}",
-                    Date = h.date.ToString() 
-                };
+                if (h.id_Contact == -1)
+                    nameContact = $"Call {h.phoneNumber}";
+                else
+                    nameContact = $"Call {elem[0].firstName} - {elem[0].secondName}";
+
+                HistoryDispMod hdm = new HistoryDispMod
+                    {
+                        Name = nameContact,
+                        Date = h.date.ToString()
+                    };
+
                 _historyList.Add(hdm);
             }
 

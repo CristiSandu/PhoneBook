@@ -5,23 +5,24 @@
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             android:TabbedPage.ToolbarPlacement="Bottom"
             xmlns:local="clr-namespace:AgendaTelefonica.PagesTab"
-            NavigationPage.HasNavigationBar="False">
-    
-  <NavigationPage Title="Favorite" >
+            NavigationPage.HasNavigationBar="False"
+            Title="Test">
+
+    <NavigationPage Title="Favorite" >
         <x:Arguments>
-            <local:Favorite />
-           
+            <local:Favorite/>
         </x:Arguments>
     </NavigationPage>
+
     <NavigationPage Title="History">
         <x:Arguments>
-            <local:History   />
-            
+            <local:History/>
         </x:Arguments>
     </NavigationPage>
+    
     <NavigationPage Title="Contacts" >
         <x:Arguments>
-            <local:Contacts  />
+            <local:Contacts/>
         </x:Arguments>
     </NavigationPage>
 

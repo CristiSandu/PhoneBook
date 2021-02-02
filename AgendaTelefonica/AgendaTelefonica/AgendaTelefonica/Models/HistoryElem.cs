@@ -14,7 +14,11 @@ namespace AgendaTelefonica.Models
         public int id_Contact { set; get; }
 
         public DateTime date { set; get; }
-        
+
+        public string phoneNumber { set; get; }
+
+
+
         public SQLiteConnection getConnection()
         {
             return new SQLiteConnection(App.DataBaseLocation);

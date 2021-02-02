@@ -64,9 +64,9 @@ namespace AgendaTelefonica.PagesTab
 
         }
 
-        private void callNumber_Clicked(object sender, EventArgs e)
+        private async void callNumber_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new DialPage());
         }
 
         private async void settingsBtn_Clicked(object sender, EventArgs e)
