@@ -29,20 +29,34 @@ namespace AgendaTelefonica.PageCont
 
         private void btnNr_Clicked(object sender, EventArgs e)
         {
+            HapticFeedback.Perform(HapticFeedbackType.LongPress);
             Button btn = (Button)sender;
-
-
             if (dialModel.Number == null)
+            {
                 dialModel.Number += btn.Text;
+                dialModel.Number_Printer += btn.Text;
+            }
             else if (btn.Text == "C")
+            {
                 dialModel.Number = "";
+                dialModel.Number_Printer = "";
+            }
             else if (dialModel.Number.Length < 10)
-                dialModel.Number += btn.Text;
-
+            {
+                if (dialModel.Number.Length == 4 ||
+                    dialModel.Number.Length == 7 )
+                {
+                    dialModel.Number_Printer += " ";
+                }
+                    dialModel.Number += btn.Text;
+                    dialModel.Number_Printer += btn.Text;
+                
+            }
         }
 
         private async void btnDial_Clicked(object sender, EventArgs e)
         {
+            HapticFeedback.Perform(HapticFeedbackType.LongPress);
             if (call(dialModel.Number))
             {
                 SQLiteConnection _conn = new SQLiteConnection(App.DataBaseLocation);
