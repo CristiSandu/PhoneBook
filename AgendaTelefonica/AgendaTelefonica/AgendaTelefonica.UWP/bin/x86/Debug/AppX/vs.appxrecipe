@@ -30,13 +30,13 @@
     <AppXManifest Include="S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-02-03T16:07:49.398</Modified>
+      <Modified>2021-02-06T12:31:46.377</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\bin\x86\Debug\AgendaTelefonica.UWP.exe">
       <PackagePath>entrypoint\AgendaTelefonica.UWP.exe</PackagePath>
-      <Modified>2021-02-03T16:07:47.264</Modified>
+      <Modified>2021-02-06T12:31:40.537</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cryst\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.11\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -96,7 +96,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\bin\Debug\netstandard2.0\AgendaTelefonica.dll">
       <PackagePath>AgendaTelefonica.dll</PackagePath>
-      <Modified>2021-02-02T18:13:48.480</Modified>
+      <Modified>2021-02-06T12:42:44.743</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cryst\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -112,39 +112,39 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\contact_default.scale-100.png">
       <PackagePath>contact_default.scale-100.png</PackagePath>
-      <Modified>2021-02-02T16:21:47.053</Modified>
+      <Modified>2021-02-06T12:31:37.960</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\contact_default.scale-200.png">
       <PackagePath>contact_default.scale-200.png</PackagePath>
-      <Modified>2021-02-02T16:21:47.055</Modified>
+      <Modified>2021-02-06T12:31:37.964</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\contact_default.scale-400.png">
       <PackagePath>contact_default.scale-400.png</PackagePath>
-      <Modified>2021-02-02T16:21:47.057</Modified>
+      <Modified>2021-02-06T12:31:37.978</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\plus.scale-100.png">
       <PackagePath>plus.scale-100.png</PackagePath>
-      <Modified>2021-02-02T16:21:47.053</Modified>
+      <Modified>2021-02-06T12:31:37.960</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\plus.scale-200.png">
       <PackagePath>plus.scale-200.png</PackagePath>
-      <Modified>2021-02-02T16:21:47.056</Modified>
+      <Modified>2021-02-06T12:31:37.977</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\plus.scale-400.png">
       <PackagePath>plus.scale-400.png</PackagePath>
-      <Modified>2021-02-02T16:21:47.059</Modified>
+      <Modified>2021-02-06T12:31:37.982</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\search_circle.scale-100.png">
       <PackagePath>search_circle.scale-100.png</PackagePath>
-      <Modified>2021-02-02T16:21:47.053</Modified>
+      <Modified>2021-02-06T12:31:37.961</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\search_circle.scale-200.png">
       <PackagePath>search_circle.scale-200.png</PackagePath>
-      <Modified>2021-02-02T16:21:47.056</Modified>
+      <Modified>2021-02-06T12:31:37.964</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\search_circle.scale-400.png">
       <PackagePath>search_circle.scale-400.png</PackagePath>
-      <Modified>2021-02-02T16:21:47.060</Modified>
+      <Modified>2021-02-06T12:31:37.980</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
@@ -291,11 +291,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-02-03T16:07:47.164</Modified>
+      <Modified>2021-02-06T12:31:40.333</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-02-03T16:07:47.165</Modified>
+      <Modified>2021-02-06T12:31:40.333</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -311,11 +311,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-02-02T16:21:49.563</Modified>
+      <Modified>2021-02-06T12:31:42.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\bin\x86\Debug\Core\AgendaTelefonica.UWP.exe">
       <PackagePath>AgendaTelefonica.UWP.exe</PackagePath>
-      <Modified>2021-02-03T16:07:49.370</Modified>
+      <Modified>2021-02-06T12:31:46.342</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

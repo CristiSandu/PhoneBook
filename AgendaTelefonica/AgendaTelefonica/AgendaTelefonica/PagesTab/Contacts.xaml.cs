@@ -25,11 +25,7 @@ namespace AgendaTelefonica.PagesTab
             InitializeComponent();
         }
 
-        private async void addContact_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new AddContact());
-
-        }
+        
 
         protected override void OnAppearing()
         {
@@ -72,6 +68,12 @@ namespace AgendaTelefonica.PagesTab
         private async void settingsBtn_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new SeatingsPage());
+        }
+
+        private async void addContact_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AddContact());
+
         }
     }
 }

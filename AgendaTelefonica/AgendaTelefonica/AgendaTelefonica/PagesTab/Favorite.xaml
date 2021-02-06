@@ -1,12 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AgendaTelefonica.PagesTab.Favorite">
+             x:Class="AgendaTelefonica.PagesTab.Favorite"
+             Title="Favorite"
+             NavigationPage.HasNavigationBar="True"
+             
+             >
 
-    <NavigationPage.TitleView>
+   <!--<NavigationPage.TitleView>
         <Label Text="Favorite" FontSize="Large" TextColor="White" FontAttributes="Bold" />
-    </NavigationPage.TitleView>
-    <StackLayout Padding="10">
+    </NavigationPage.TitleView>-->
+
+
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="searchBtn" Text="Search"
+                 IconImageSource="search_circle.png"
+                 Order="Primary"
+                 Priority="0"
+                     Clicked="searchBtn_Clicked"/>
+        <ToolbarItem x:Name="addContBtn" Order="Primary"
+                     IconImageSource="plus.png"
+                     Text="Add"
+                     Priority="1"
+                     Clicked="addContBtn_Clicked" />
+        <ToolbarItem x:Name ="settingsBtn" Order="Secondary"
+                     Text="Settings"
+                     Priority="2"
+                     Clicked="settingsBtn_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <AbsoluteLayout Padding="10,20,10,10">
         <ListView x:Name="favoriteListView" ItemSelected="favoriteListView_ItemSelected" >
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -19,6 +43,17 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-    </StackLayout>
+        <Button x:Name="callNumber" 
+                Text="Call" 
+                Clicked="callNumber_Clicked"
+                CornerRadius="90" 
+                AbsoluteLayout.LayoutBounds="0.5,1,70,70" 
+                AbsoluteLayout.LayoutFlags="PositionProportional"/>
+    </AbsoluteLayout>
+
+
+
+       
+    
 
 </ContentPage>

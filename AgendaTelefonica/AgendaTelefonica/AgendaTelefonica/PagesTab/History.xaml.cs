@@ -11,6 +11,7 @@ using AgendaTelefonica.PageCont;
 using AgendaTelefonica.Models;
 using SQLite;
 using System.Collections.ObjectModel;
+using AgendaTelefonica.Tools;
 
 namespace AgendaTelefonica.PagesTab
 {
@@ -46,10 +47,10 @@ namespace AgendaTelefonica.PagesTab
                     nameContact = $"Call {elem[0].firstName} - {elem[0].secondName}";
 
                 HistoryDispMod hdm = new HistoryDispMod
-                    {
-                        Name = nameContact,
-                        Date = h.date.ToString()
-                    };
+                {
+                    Name = nameContact,
+                    Date = h.date.ToString()
+                };
 
                 _historyList.Add(hdm);
             }
@@ -67,24 +68,24 @@ namespace AgendaTelefonica.PagesTab
 
         }
 
-        private void callNumber_Clicked(object sender, EventArgs e)
+        private async void callNumber_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new DialPage());
         }
 
-        private void searchBtn_Clicked(object sender, EventArgs e)
+        private async void searchBtn_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new SearchPage());
         }
 
-        private void addContBtn_Clicked(object sender, EventArgs e)
+        private async void addContBtn_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new AddContact());
         }
 
-        private void settingsBtn_Clicked(object sender, EventArgs e)
+        private async void settingsBtn_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new SeatingsPage());
         }
     }
 }

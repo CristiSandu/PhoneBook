@@ -1,5 +1,6 @@
 ﻿using AgendaTelefonica.Models;
 using AgendaTelefonica.PageCont;
+using AgendaTelefonica.Tools;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -46,6 +47,26 @@ namespace AgendaTelefonica.PagesTab
                 Models.Contact cont = e.SelectedItem as Models.Contact;
                 await Navigation.PushAsync(new DisContact(cont));
             }
+        }
+
+        private async void callNumber_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DialPage());
+        }
+
+        private async void settingsBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SeatingsPage());
+        }
+
+        private async void addContBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AddContact());
+        }
+
+        private async void searchBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SearchPage());
         }
     }
 }
