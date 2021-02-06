@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AgendaTelefonica.Tools.SearchPage">
-
-    <NavigationPage.TitleView>
-        <SearchBar x:Name="searchBarContacts" Placeholder="Search Contacts" TextChanged="searchBarContacts_TextChanged"  />
-    </NavigationPage.TitleView>
-
-    
-    <StackLayout Padding="10,0,10,10">
+             x:Class="AgendaTelefonica.Tools.SearchPage"
+                NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+    <StackLayout Orientation="Horizontal" Padding="0,0,10,0" Spacing="0" BackgroundColor="Blue">
+            <Button Text="Back" HeightRequest="50" WidthRequest="60" />
+        <SearchBar x:Name="searchBarContacts"  TextChanged="searchBarContacts_TextChanged"  TextColor="Aqua" />
+    </StackLayout>
+    <StackLayout Padding="10,10,10,10">
+        
         <ListView x:Name="contactsSearchListView" ItemSelected="contactsSearchListView_ItemSelected"  HasUnevenRows="True" SeparatorVisibility="None" >
             <ListView.ItemTemplate>
                 <DataTemplate >
@@ -21,5 +22,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+    </StackLayout>
     </StackLayout>
 </ContentPage>

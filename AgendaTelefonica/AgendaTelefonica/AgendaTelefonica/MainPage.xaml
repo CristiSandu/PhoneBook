@@ -5,9 +5,11 @@
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             android:TabbedPage.ToolbarPlacement="Bottom"
             xmlns:local="clr-namespace:AgendaTelefonica.PagesTab"
-            NavigationPage.HasNavigationBar="False"
-            Title="Test">
+            NavigationPage.HasNavigationBar="False" 
+            android:TabbedPage.IsSwipePagingEnabled="False"
+            >
 
+    
     <NavigationPage Title="Favorite" >
         <x:Arguments>
             <local:Favorite/>

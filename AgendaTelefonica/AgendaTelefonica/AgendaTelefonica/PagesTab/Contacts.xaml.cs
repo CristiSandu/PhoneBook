@@ -25,8 +25,6 @@ namespace AgendaTelefonica.PagesTab
             InitializeComponent();
         }
 
-        
-
         protected override void OnAppearing()
         {
             base.OnAppearing();

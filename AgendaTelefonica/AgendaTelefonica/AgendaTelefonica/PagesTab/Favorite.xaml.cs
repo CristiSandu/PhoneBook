@@ -69,4 +69,7 @@ namespace AgendaTelefonica.PagesTab
             await Navigation.PushAsync(new SearchPage());
         }
     }
+
+
+   
 }
