@@ -23,6 +23,7 @@ namespace AgendaTelefonica.PagesTab
         public Contacts()
         {
             InitializeComponent();
+            
         }
 
         protected override void OnAppearing()
@@ -32,6 +33,8 @@ namespace AgendaTelefonica.PagesTab
             conn.CreateTable<Models.Contact>();
             var conts = conn.Table<Models.Contact>().ToList();
             _contacts = new ObservableCollection<Contact>(conts);
+
+            
 
             contactsListView.ItemsSource = _contacts;
             conn.Close();

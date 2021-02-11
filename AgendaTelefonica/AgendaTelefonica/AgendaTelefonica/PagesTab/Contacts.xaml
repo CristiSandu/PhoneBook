@@ -12,12 +12,12 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Search"
-                 IconImageSource="search_circle.png"
+                 IconImageSource="search.png"
                  Order="Primary"
                  Priority="0"
                      Clicked="deleteAllCont_Clicked"/>
         <ToolbarItem Order="Primary"
-                     IconImageSource="plus.png"
+                     IconImageSource="add.png"
                      Text="Add"
                      Priority="1"
                      Clicked="addContact_Clicked" />
@@ -41,6 +41,7 @@
             </ListView.ItemTemplate>
         </ListView>
         <Button x:Name="callNumber" Text="Call" Clicked="callNumber_Clicked"  CornerRadius="90" 
+                ImageSource="keyboard.png"
                 AbsoluteLayout.LayoutBounds="0.5,1,70,70" 
                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
     </AbsoluteLayout>

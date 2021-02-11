@@ -6,4 +6,11 @@
     <color name="colorAccent">#FF4081</color>
     <color name="ListViewSelected">#7F5dFe</color>
     <color name="ListViewHighlighted">#E39696</color>
+
+  <color name="colorPrimaryTheme">#0096C7</color>
+  <color name="colorPrimaryDarkTheme">#023E8A</color>
+  <color name="colorPrimaryLightTheme">#90E0EF</color>
+
+  <color name="textColor">#023E8A</color>
+
 </resources>

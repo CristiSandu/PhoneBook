@@ -11,12 +11,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="IMG\add.svg" />
     <None Remove="IMG\contact_default.svg" />
-    <None Remove="IMG\plus.svg" />
-    <None Remove="IMG\search_circle.svg" />
+    <None Remove="IMG\favorite_border.svg" />
+    <None Remove="IMG\history.svg" />
+    <None Remove="IMG\keyboard.svg" />
+    <None Remove="IMG\keyboard_backspace.svg" />
+    <None Remove="IMG\perm_contact_calendar.svg" />
+    <None Remove="IMG\phone.svg" />
+    <None Remove="IMG\search.svg" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microcharts.Forms" Version="0.9.5.9" />
     <PackageReference Include="Resizetizer.NT" Version="0.2.0" />
     <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
@@ -25,9 +32,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <SharedImage Include="IMG\add.svg" />
     <SharedImage Include="IMG\contact_default.svg" BaseSize="20,20" />
-    <SharedImage Include="IMG\plus.svg" BaseSize="45,45" />
-    <SharedImage Include="IMG\search_circle.svg" BaseSize="45,45" />
+    <SharedImage Include="IMG\favorite_border.svg" />
+    <SharedImage Include="IMG\history.svg" />
+    <SharedImage Include="IMG\keyboard.svg" BaseSize="50,50" />
+    <SharedImage Include="IMG\keyboard_backspace.svg" />
+    <SharedImage Include="IMG\perm_contact_calendar.svg" />
+    <SharedImage Include="IMG\phone.svg" BaseSize="50,50" />
+    <SharedImage Include="IMG\search.svg" BaseSize="45,45" />
   </ItemGroup>
 
   <ItemGroup>
@@ -47,6 +60,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="PagesTab\History.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PagesTab\TypesPages.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Tools\SearchPage.xaml">

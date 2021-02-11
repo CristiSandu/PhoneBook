@@ -4,9 +4,9 @@
              x:Class="AgendaTelefonica.Tools.SearchPage"
                 NavigationPage.HasNavigationBar="False">
     <StackLayout>
-    <StackLayout Orientation="Horizontal" Padding="0,0,10,0" Spacing="0" BackgroundColor="Blue">
+        <StackLayout Orientation="Horizontal" Padding="0,0,10,0" Spacing="0" BackgroundColor="#2CA0FD">
             <Button Text="Back" HeightRequest="50" WidthRequest="60" />
-        <SearchBar x:Name="searchBarContacts"  TextChanged="searchBarContacts_TextChanged"  TextColor="Aqua" />
+        <SearchBar x:Name="searchBarContacts"  TextChanged="searchBarContacts_TextChanged"  TextColor="White" />
     </StackLayout>
     <StackLayout Padding="10,10,10,10">
         

@@ -45,7 +45,18 @@
             <Button x:Name="btnDelete" BorderRadius="30" Grid.Row="5" Grid.Column="2" Text="C" Clicked="btnNr_Clicked" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
 
             <StackLayout  Grid.Row="6" Grid.Column="1">
-                <Button x:Name="btnDial" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="70" HeightRequest="70" Text="Call" CornerRadius="90" Clicked="btnDial_Clicked" FontSize="Small" TextColor="#28282c" BackgroundColor="#96ca2d" />
+                <Button x:Name="btnDial"
+                        ImageSource="phone.png"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center" 
+                        WidthRequest="70" 
+                        HeightRequest="70" 
+                        Text="Call" 
+                        CornerRadius="90"
+                        Clicked="btnDial_Clicked" 
+                        FontSize="Small" 
+                        TextColor="#28282c" 
+                        BackgroundColor="#0096C7" />
             </StackLayout>
         </Grid>
     </StackLayout>

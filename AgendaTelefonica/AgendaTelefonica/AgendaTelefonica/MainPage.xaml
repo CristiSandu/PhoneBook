@@ -6,23 +6,22 @@
             android:TabbedPage.ToolbarPlacement="Bottom"
             xmlns:local="clr-namespace:AgendaTelefonica.PagesTab"
             NavigationPage.HasNavigationBar="False" 
-            android:TabbedPage.IsSwipePagingEnabled="False"
-            >
+            android:TabbedPage.IsSwipePagingEnabled="False">
 
     
-    <NavigationPage Title="Favorite" >
+    <NavigationPage Title="Favorite" IconImageSource="favorite_border.png" >
         <x:Arguments>
             <local:Favorite/>
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="History">
+    <NavigationPage Title="History" IconImageSource="history.png">
         <x:Arguments>
             <local:History/>
         </x:Arguments>
     </NavigationPage>
-    
-    <NavigationPage Title="Contacts" >
+
+    <NavigationPage Title="Contacts"  IconImageSource="perm_contact_calendar.png">
         <x:Arguments>
             <local:Contacts/>
         </x:Arguments>

@@ -1,6 +1,8 @@
 ﻿using AgendaTelefonica.Models;
 using AgendaTelefonica.PageCont;
 using AgendaTelefonica.Tools;
+using Microcharts;
+using SkiaSharp;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -20,6 +22,7 @@ namespace AgendaTelefonica.PagesTab
         Contact contact = new Contact();
         SQLiteConnection conn;
         private ObservableCollection<Models.Contact> _contacts;
+
         public Favorite()
         {
             InitializeComponent();
@@ -71,5 +74,5 @@ namespace AgendaTelefonica.PagesTab
     }
 
 
-   
+
 }

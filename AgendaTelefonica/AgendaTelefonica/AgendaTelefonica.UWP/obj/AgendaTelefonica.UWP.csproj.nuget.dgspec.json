@@ -43,6 +43,10 @@
       "frameworks": {
         "uap10.0.16299": {
           "dependencies": {
+            "Microcharts.Forms": {
+              "target": "Package",
+              "version": "[0.9.5.9, )"
+            },
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
               "version": "[6.2.11, )"
@@ -139,6 +143,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Microcharts.Forms": {
+              "target": "Package",
+              "version": "[0.9.5.9, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
