@@ -8,7 +8,7 @@
              
              >
 
-   <!--<NavigationPage.TitleView>
+    <!--<NavigationPage.TitleView>
         <Label Text="Favorite" FontSize="Large" TextColor="White" FontAttributes="Bold" />
     </NavigationPage.TitleView>-->
 
@@ -32,20 +32,34 @@
     </ContentPage.ToolbarItems>
 
     <AbsoluteLayout Padding="10,20,10,10">
-        <ListView x:Name="favoriteListView" ItemSelected="favoriteListView_ItemSelected" >
-            <ListView.ItemTemplate>
+        <CollectionView x:Name="favoriteListView" ItemsSource="{Binding Contact}" SelectedItem="favoriteListView_ItemSelected" >
+            <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell Height="65">
+                    <SwipeView>
+                        <SwipeView.RightItems>
+                            <SwipeItems>
+                                <SwipeItem
+                                    BackgroundColor="Orange"
+                                    Text="Favorite">
+                                </SwipeItem>
+                                <SwipeItem
+                                    IsDestructive="True"
+                                    BackgroundColor="RED"
+                                    Text="Delete">
+                                </SwipeItem>
+                            </SwipeItems>
+                        </SwipeView.RightItems>
+
                         <StackLayout Orientation="Horizontal">
                             <Label x:Name="nameContact" Text="{Binding firstName}" VerticalOptions="Center" FontSize="Medium"/>
                             <Label x:Name="secondName" Text="{Binding secondName}" VerticalOptions="Center" FontSize="Medium"/>
                         </StackLayout>
-                    </ViewCell>
+                    </SwipeView>
                 </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
         <Button x:Name="callNumber" 
-                Text="Call" 
+               
                 Clicked="callNumber_Clicked"
                 CornerRadius="90" 
                 ImageSource="keyboard.png"
@@ -55,7 +69,7 @@
 
 
 
-       
-    
+
+
 
 </ContentPage>

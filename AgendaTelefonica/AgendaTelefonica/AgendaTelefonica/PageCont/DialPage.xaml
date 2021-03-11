@@ -51,7 +51,6 @@
                         HorizontalOptions="Center" 
                         WidthRequest="70" 
                         HeightRequest="70" 
-                        Text="Call" 
                         CornerRadius="90"
                         Clicked="btnDial_Clicked" 
                         FontSize="Small" 

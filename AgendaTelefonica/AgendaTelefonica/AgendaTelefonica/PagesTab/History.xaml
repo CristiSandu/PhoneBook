@@ -46,7 +46,7 @@
         </ListView>
 
         <Button x:Name="callNumber" 
-                Text="Call" 
+               
                 Clicked="callNumber_Clicked" 
                 CornerRadius="90" 
                 ImageSource="keyboard.png"

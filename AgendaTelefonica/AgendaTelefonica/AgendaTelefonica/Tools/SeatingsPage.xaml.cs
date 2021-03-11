@@ -45,7 +45,7 @@ namespace AgendaTelefonica.Tools
         public SeatingsPage()
         {
             InitializeComponent();
-            chartView.Chart = new RadialGaugeChart { Entries = entries, LabelTextSize = 40 };
+            chartView.Chart = new RadarChart { Entries = entries };
         }
     }
 }
