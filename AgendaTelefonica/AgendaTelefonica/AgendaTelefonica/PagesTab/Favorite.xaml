@@ -32,29 +32,50 @@
     </ContentPage.ToolbarItems>
 
     <AbsoluteLayout Padding="10,20,10,10">
-        <CollectionView x:Name="favoriteListView" ItemsSource="{Binding Contact}" SelectedItem="favoriteListView_ItemSelected" >
+        <CollectionView x:Name="favoriteListView" 
+                        ItemsSource="{Binding Contact}" 
+                        SelectionMode="Single" >
+            <!--SelectionChanged="favoriteListView_ItemSelected"-->  
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" Span="2" HorizontalItemSpacing="7" VerticalItemSpacing="7"/>
+            </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <SwipeView>
-                        <SwipeView.RightItems>
-                            <SwipeItems>
-                                <SwipeItem
-                                    BackgroundColor="Orange"
-                                    Text="Favorite">
-                                </SwipeItem>
-                                <SwipeItem
-                                    IsDestructive="True"
-                                    BackgroundColor="RED"
-                                    Text="Delete">
-                                </SwipeItem>
-                            </SwipeItems>
-                        </SwipeView.RightItems>
+                    <Frame Padding="10" BackgroundColor="Transparent" BorderColor="Red" >
 
-                        <StackLayout Orientation="Horizontal">
-                            <Label x:Name="nameContact" Text="{Binding firstName}" VerticalOptions="Center" FontSize="Medium"/>
-                            <Label x:Name="secondName" Text="{Binding secondName}" VerticalOptions="Center" FontSize="Medium"/>
-                        </StackLayout>
-                    </SwipeView>
+                        <Grid Padding="10,10,10,10"  >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.RowSpan="2"
+                                   Source="contact_default.png"
+                                   Aspect="AspectFill"
+                                   HeightRequest="20"
+                                   WidthRequest="30" 
+                                   HorizontalOptions="StartAndExpand"
+                                   />
+
+                            <Label Grid.Column="1"
+                                   Text="{Binding firstName}"
+                                   HorizontalOptions="EndAndExpand"
+                                   TextColor="Green"
+                                   FontAttributes="Bold"
+                                   VerticalOptions="Center" FontSize="Small"/>
+
+                            <Label Grid.Row="1"
+                                   Grid.Column="1"
+                                   TextColor="Green"
+                                   HorizontalOptions="End"
+                                   Text="{Binding Path=secondName}"
+                                   FontAttributes="Italic"
+                                   VerticalOptions="Center" FontSize="Small"/>
+                        </Grid>
+                    </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
@@ -67,7 +88,15 @@
                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
     </AbsoluteLayout>
 
-
+    <!--
+     <StackLayout Orientation="Horizontal">
+                            <Label x:Name="nameContact" Text="{Binding firstName}" VerticalOptions="Center" FontSize="Medium"/>
+                            <Label x:Name="secondName" Text="{Binding secondName}" VerticalOptions="Center" FontSize="Medium"/>
+                        </StackLayout>
+    
+    
+    
+    -->
 
 
 
