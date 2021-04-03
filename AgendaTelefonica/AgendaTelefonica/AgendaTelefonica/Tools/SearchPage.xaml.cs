@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using AgendaTelefonica.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -34,15 +35,14 @@ namespace AgendaTelefonica.Tools
             var contacts = conn.Table<Models.Contact>().ToList();
             searchBarContacts.Placeholder = $"Search in {contacts.Count()} contacts";
             _contacts = new ObservableCollection<Models.Contact>(contacts);
-            contactsSearchListView.ItemsSource = _contacts; 
              conn.Close();
         }
 
-        private async void contactsSearchListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void contactsSearchListView_ItemSelected(object sender, SelectionChangedEventArgs e)
         {
-            if (e.SelectedItem != null)
+            var cont = e.CurrentSelection.FirstOrDefault() as Contact;
+            if (e.CurrentSelection != null)
             {
-                var cont = e.SelectedItem as Models.Contact;
                 await Navigation.PushAsync(new DisContact(cont));
             }
         }

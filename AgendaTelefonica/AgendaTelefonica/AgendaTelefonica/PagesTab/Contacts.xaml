@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
              x:Class="AgendaTelefonica.PagesTab.Contacts"
-             Title="Contacts">
+             Title="Contacts"
+             BackgroundColor="{StaticResource AppBackgroundColor}" >
    
     
     <!--<NavigationPage.TitleView>
@@ -27,22 +28,50 @@
                      Clicked="settingsBtn_Clicked" />
     </ContentPage.ToolbarItems>
     
-    <AbsoluteLayout Padding="10,20,10,10">
-        <ListView x:Name="contactsListView"  ItemSelected="contactsListView_ItemSelected" >
-            <ListView.ItemTemplate>
+    <AbsoluteLayout Padding="10">
+        <CollectionView x:Name="contactsListView"
+                        SelectionChanged = "contactsListView_ItemSelected"
+                        AbsoluteLayout.LayoutBounds = "0.5,0"
+                        AbsoluteLayout.LayoutFlags = "PositionProportional"
+                        SelectionMode = "Single">
+            
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical"
+                                 Span="1"
+                                 HorizontalItemSpacing="7"
+                                 VerticalItemSpacing="7"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell Height="50">
-                        <StackLayout Orientation="Horizontal" Spacing="2">
-                            <Label x:Name="nameContact" Text="{Binding firstName}" VerticalOptions="Center" FontSize="Medium"/>
-                            <Label x:Name="secondName" Text="{Binding secondName}" VerticalOptions="Center" FontSize="Medium"/>
-                        </StackLayout>
-                    </ViewCell>
+                    <Frame  Style="{StaticResource FrameStyle}" >
+
+                        <Grid Padding="5,5,5,5"  >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="1"
+                                   Text="{Binding firstName}"
+                                   Style="{StaticResource LabelStyle}"
+                                   FontSize="Medium"/>
+
+                            <Label Grid.Row="1"
+                                   Grid.Column="1"
+                                   Text="{Binding Path=secondName}"
+                                   Style="{StaticResource LabelStyle}"
+                                   FontSize="Medium"/>
+                        </Grid>
+                    </Frame>
                 </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
         <Button x:Name="callNumber"  Clicked="callNumber_Clicked"  CornerRadius="90" 
                 ImageSource="keyboard.png"
-                AbsoluteLayout.LayoutBounds="0.5,1,70,70" 
+                AbsoluteLayout.LayoutBounds="0.5,0.9,70,70" 
                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
     </AbsoluteLayout>
 </ContentPage>

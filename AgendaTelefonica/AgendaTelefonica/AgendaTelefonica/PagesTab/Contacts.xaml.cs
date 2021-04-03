@@ -40,11 +40,12 @@ namespace AgendaTelefonica.PagesTab
             conn.Close();
         }
 
-        private async void contactsListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void contactsListView_ItemSelected(object sender, SelectionChangedEventArgs e)
         {
-            if (e.SelectedItem != null)
+
+            var cont = e.CurrentSelection.FirstOrDefault() as Contact;
+            if (e.CurrentSelection != null)
             {
-                Models.Contact cont = e.SelectedItem as Models.Contact;
                 await Navigation.PushAsync(new DisContact(cont));
             }
         }

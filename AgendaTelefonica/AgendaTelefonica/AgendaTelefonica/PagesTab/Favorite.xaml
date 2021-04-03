@@ -5,8 +5,7 @@
              xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
              Title="Favorite"
              NavigationPage.HasNavigationBar="True"
-             
-             >
+             BackgroundColor="{StaticResource AppBackgroundColor}">
 
     <!--<NavigationPage.TitleView>
         <Label Text="Favorite" FontSize="Large" TextColor="White" FontAttributes="Bold" />
@@ -34,46 +33,35 @@
     <AbsoluteLayout Padding="10,20,10,10">
         <CollectionView x:Name="favoriteListView" 
                         ItemsSource="{Binding Contact}" 
+                        AbsoluteLayout.LayoutBounds = "0.5,0"
+                        AbsoluteLayout.LayoutFlags = "PositionProportional"
                         SelectionMode="Single" >
             <!--SelectionChanged="favoriteListView_ItemSelected"-->  
             <CollectionView.ItemsLayout>
-                <GridItemsLayout Orientation="Vertical" Span="2" HorizontalItemSpacing="7" VerticalItemSpacing="7"/>
+                <GridItemsLayout Orientation="Vertical" Span="2" HorizontalItemSpacing="5" VerticalItemSpacing="5" />
+                
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Frame Padding="10" BackgroundColor="Transparent" BorderColor="Red" >
+                    <Frame  Style="{StaticResource FrameStyle}" CornerRadius ="0">
 
-                        <Grid Padding="10,10,10,10"  >
+                        <Grid Padding="5,5,5,5"  >
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="Auto" />
+                                <RowDefinition Height="200" />
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto" />
-                                <ColumnDefinition Width="Auto" />
                             </Grid.ColumnDefinitions>
-                            <Image Grid.RowSpan="2"
-                                   Source="contact_default.png"
-                                   Aspect="AspectFill"
-                                   HeightRequest="20"
-                                   WidthRequest="30" 
-                                   HorizontalOptions="StartAndExpand"
-                                   />
-
                             <Label Grid.Column="1"
                                    Text="{Binding firstName}"
-                                   HorizontalOptions="EndAndExpand"
-                                   TextColor="Green"
-                                   FontAttributes="Bold"
-                                   VerticalOptions="Center" FontSize="Small"/>
+                                   Style="{StaticResource LabelStyle}" />
 
                             <Label Grid.Row="1"
                                    Grid.Column="1"
-                                   TextColor="Green"
-                                   HorizontalOptions="End"
-                                   Text="{Binding Path=secondName}"
-                                   FontAttributes="Italic"
-                                   VerticalOptions="Center" FontSize="Small"/>
+                                   Style="{StaticResource LabelStyle}"
+                                   Text="{Binding Path=secondName}" />
                         </Grid>
                     </Frame>
                 </DataTemplate>
@@ -84,7 +72,7 @@
                 Clicked="callNumber_Clicked"
                 CornerRadius="90" 
                 ImageSource="keyboard.png"
-                AbsoluteLayout.LayoutBounds="0.5,1,70,70" 
+                AbsoluteLayout.LayoutBounds="0.5,0.9,70,70" 
                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
     </AbsoluteLayout>
 

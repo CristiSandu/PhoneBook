@@ -4,5 +4,37 @@
              x:Class="AgendaTelefonica.App">
     <Application.Resources>
 
+        <Color x:Key="AppPrimaryColor">#007ac1</Color>
+        <Color x:Key="AppBackgroundColor">#67daff</Color>
+        <Color x:Key="PrimaryColor">#00a9f4</Color>
+        
+        <Color x:Key="SecondaryColor">#ffc107</Color>
+        <Color x:Key="SecondaryColor_L">#fff350</Color>
+        <Color x:Key="SecondaryColor_B">#c79100</Color>
+
+        <Color x:Key="TertiaryColor">Silver</Color>
+        <Color x:Key="TextColor">Black</Color>
+
+
+
+        <Style x:Key="FrameStyle" TargetType="Frame">
+            <Setter Property="BackgroundColor" Value="{StaticResource SecondaryColor}"/>
+            <Setter Property="Padding" Value="10,10,10,10" />
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="HasShadow" Value="True"/>
+            <Setter Property="BorderColor" Value="{StaticResource AppPrimaryColor}"/>
+            
+
+
+
+        </Style>
+
+        <Style x:Key="LabelStyle" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource TextColor}"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="HorizontalOptions" Value="StartAndExpand"/>
+            <Setter Property="VerticalOptions" Value="Center"/>
+        </Style>
     </Application.Resources>
 </Application>

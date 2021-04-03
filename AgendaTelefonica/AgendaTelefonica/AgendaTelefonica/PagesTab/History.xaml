@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AgendaTelefonica.PagesTab.History"
-              Title="History">
+              Title="History"
+             BackgroundColor="{StaticResource AppBackgroundColor}"
+             >
 
     <!--<NavigationPage.TitleView>
         <Label Text="History" FontSize="Large" TextColor="White" FontAttributes="Bold" />
@@ -26,31 +28,53 @@
     </ContentPage.ToolbarItems>
 
     <AbsoluteLayout Padding="10,20,10,10">
-        <ListView x:Name="historyListView" ItemSelected="historyListView_ItemSelected" HasUnevenRows="True" SeparatorVisibility="None" >
-            <ListView.ItemTemplate>
+        <CollectionView x:Name="historyListView" 
+                        SelectedItem="historyListView_ItemSelected"
+                        AbsoluteLayout.LayoutBounds = "0.5,0"
+                        AbsoluteLayout.LayoutFlags = "PositionProportional"
+                        SelectionMode ="Single">
+
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" Span="1" HorizontalItemSpacing="7" VerticalItemSpacing="7"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell Height="65">
-                        <StackLayout Spacing="2">
-                            <Label x:Name="nameContact" Text="{Binding Name}" VerticalOptions="Center" FontSize="Medium"/>
-                            <Label x:Name="secondName" Text="{Binding Date}" VerticalOptions="Center" FontSize="Small"/>
-                        </StackLayout>
-                    </ViewCell>
+                    <Frame  Style="{StaticResource FrameStyle}" >
+                        <Grid Padding="5,5,5,5"  >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            
+                            <Label Grid.Column="1"
+                                   Text="{Binding Name}"
+                                   Style="{StaticResource LabelStyle}"
+                                   FontSize="Medium"/>
+
+                            <Label Grid.Column="2"
+                                   Text="{Binding Path=Date}"
+                                   Style="{StaticResource LabelStyle}"
+                                   FontSize="Medium"/>
+                        </Grid>
+                    </Frame>
                 </DataTemplate>
-            </ListView.ItemTemplate>
-            <ListView.Header>
+            </CollectionView.ItemTemplate>
+            <CollectionView.Header>
                 <StackLayout>
                     <Label HorizontalOptions="Center"  Text="Test History" VerticalOptions="Center"/>
                 </StackLayout>
-            </ListView.Header>
-
-        </ListView>
+            </CollectionView.Header>
+        </CollectionView>
 
         <Button x:Name="callNumber" 
-               
                 Clicked="callNumber_Clicked" 
                 CornerRadius="90" 
                 ImageSource="keyboard.png"
-                AbsoluteLayout.LayoutBounds="0.5,1,70,70" 
+                AbsoluteLayout.LayoutBounds="0.5,0.9,70,70" 
                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
     </AbsoluteLayout>
 
