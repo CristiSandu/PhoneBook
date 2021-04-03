@@ -40,7 +40,7 @@ namespace AgendaTelefonica.PageCont
                 contactPhoto.Source = ImageSource.FromStream(() => stream);
                 photoSave = GetImageBytes(stream);
             }
-            catch (Exception ex)
+            catch (NullReferenceException ex)
             {
                 Console.WriteLine($"CapturePhotoAsync THREW: {ex.Message}");
             }

@@ -2,9 +2,9 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <AndroidDesignerPreferredTheme>MainTheme</AndroidDesignerPreferredTheme>
-    <SelectedDevice>pixel_3_xl_q_10_0_-_api_29</SelectedDevice>
+    <SelectedDevice>OnePlus A6013</SelectedDevice>
     <DefaultDevice>pixel_3_xl_q_10_0_-_api_29</DefaultDevice>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
-    <ActiveDebugProfile>pixel_3_xl_q_10_0_-_api_29</ActiveDebugProfile>
+    <ActiveDebugProfile>OnePlus A6013</ActiveDebugProfile>
   </PropertyGroup>
 </Project>

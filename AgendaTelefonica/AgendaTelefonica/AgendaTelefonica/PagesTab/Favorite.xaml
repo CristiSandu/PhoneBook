@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AgendaTelefonica.PagesTab.Favorite"
              xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             xmlns:converter ="clr-namespace:AgendaTelefonica.Convertors"
              Title="Favorite"
              NavigationPage.HasNavigationBar="True"
              BackgroundColor="{StaticResource AppBackgroundColor}">
@@ -10,6 +11,12 @@
     <!--<NavigationPage.TitleView>
         <Label Text="Favorite" FontSize="Large" TextColor="White" FontAttributes="Bold" />
     </NavigationPage.TitleView>-->
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converter:ColorConvertorFavorite x:Key="ColorConvertorFavorite"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
 
 
@@ -43,13 +50,13 @@
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Frame  Style="{StaticResource FrameStyle}" CornerRadius ="0">
+                    <Frame  Style="{StaticResource FrameStyle}" CornerRadius ="0" BackgroundColor="{Binding Path=firstName, Converter={StaticResource ColorConvertorFavorite}}">
 
                         <Grid Padding="5,5,5,5"  >
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="Auto" />
-                                <RowDefinition Height="200" />
+                                <RowDefinition Height="100" />
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto" />

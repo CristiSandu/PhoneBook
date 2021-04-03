@@ -56,6 +56,7 @@ namespace AgendaTelefonica.PagesTab
             }
 
             historyListView.ItemsSource = _historyList;
+            nrOfCalls.Text = $"Number of Calls: {_historyList.Count}";
         }
 
         private async void dispContact_Clicked(object sender, EventArgs e)

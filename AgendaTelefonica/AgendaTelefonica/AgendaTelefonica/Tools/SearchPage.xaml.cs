@@ -29,7 +29,7 @@ namespace AgendaTelefonica.Tools
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            focus();
+            Focus();
             SQLiteConnection conn = new SQLiteConnection(App.DataBaseLocation);
             //conn.CreateTable<Artists>();
             var contacts = conn.Table<Models.Contact>().ToList();
@@ -47,7 +47,7 @@ namespace AgendaTelefonica.Tools
             }
         }
 
-        public async void focus()
+        public async void Focus()
         {
             searchBarContacts.Focus();
         }

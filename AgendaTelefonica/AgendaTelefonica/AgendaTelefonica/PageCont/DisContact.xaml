@@ -8,19 +8,50 @@
         <Label Text="Display Contact" FontSize="Large" TextColor="White" FontAttributes="Bold" />
     </NavigationPage.TitleView>
 
-    <ScrollView>
-        <StackLayout Padding="20,50,20,20" Spacing="40">
+    <ContentPage.Resources>
+        <Style x:Key="LabelShowWind" TargetType="Label">
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="TextColor" Value="Gray"/>
+        </Style>
+    </ContentPage.Resources>
+
+        <StackLayout Padding="20,8,20,20" Spacing="20">
             <ic:CircleImage x:Name="contactPhoto" WidthRequest="150" HeightRequest="150" Aspect="AspectFill" />
-            <Label x:Name="firstName" Text="{Binding firstName}" FontSize="Large" FontAttributes="Bold" />
-            <Label x:Name="secondName" Text="{Binding secondName}" FontSize="Large" FontAttributes="Bold"/>
-            <Label x:Name="phoneNumber" Text="{Binding phoneNumber}" FontSize="Large" FontAttributes="Bold"/>
-            <Label x:Name="email" Text="{Binding email}" FontSize="Large" FontAttributes="Bold"/>
             <StackLayout>
-                <Button x:Name="callBtn" Text="Call" Clicked="callBtn_Clicked" />
-                <Button x:Name ="backBtn" Text="Back" Clicked="backBtn_Clicked" />
+                <Label Text="Nume" Style="{StaticResource LabelShowWind}"/>
+                <Frame Style="{StaticResource FrameStyle}">
+                <Label x:Name="firstName" Text="{Binding firstName}" Style="{StaticResource LabelStyle}" FontSize="Large" FontAttributes="Bold" />
+                </Frame>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="Prenume" Style="{StaticResource LabelShowWind}"/>
+                <Frame Style="{StaticResource FrameStyle}"   >
+                    <Label x:Name="secondName" Text="{Binding secondName}" Style="{StaticResource LabelStyle}" FontSize="Large" FontAttributes="Bold"/>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="Numar de Telefon" Style="{StaticResource LabelShowWind}"/>
+                <Frame Style="{StaticResource FrameStyle}"   >
+                <Label x:Name="phoneNumber" Text="{Binding phoneNumber}" Style="{StaticResource LabelStyle}" FontSize="Large" FontAttributes="Bold"/>
+                </Frame>
+            </StackLayout>
+
+
+            <StackLayout>
+                <Label Text="Email" Style="{StaticResource LabelShowWind}"/>
+                <Frame Style="{StaticResource FrameStyle}"   >
+                <Label x:Name="email" Text="{Binding email}" Style="{StaticResource LabelStyle}" FontSize="Large" FontAttributes="Bold"/>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Spacing="2" HorizontalOptions="Center">
+                <Button x:Name="callBtn" Text="Call" Clicked="callBtn_Clicked" Style="{StaticResource ButtonStyle}"  HorizontalOptions="End"/>
+                <Button x:Name ="backBtn" Text="Back" Clicked="backBtn_Clicked" Style="{StaticResource ButtonStyle}" HorizontalOptions="Start"/>
             </StackLayout>
         </StackLayout>
-    </ScrollView>
 
 
 </ContentPage>

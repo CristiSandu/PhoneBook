@@ -31,18 +31,14 @@
                                 </Grid.ColumnDefinitions>
                                 <Label Grid.Column="1"
                                    Text="{Binding firstName}"
-                                   HorizontalOptions="StartAndExpand"
-                                   TextColor="Green"
-                                   FontAttributes="Bold"
-                                   VerticalOptions="Center" FontSize="Small"/>
+                                   Style="{StaticResource LabelStyle}"
+                                   FontSize="Medium"/>
 
                                 <Label Grid.Row="1"
                                    Grid.Column="1"
-                                   TextColor="Green"
-                                   HorizontalOptions="StartAndExpand"
                                    Text="{Binding Path=secondName}"
-                                   FontAttributes="Italic"
-                                   VerticalOptions="Center" FontSize="Small"/>
+                                   Style="{StaticResource LabelStyle}"
+                                   FontSize="Medium"/>
                             </Grid>
                         </Frame>
                     </DataTemplate>

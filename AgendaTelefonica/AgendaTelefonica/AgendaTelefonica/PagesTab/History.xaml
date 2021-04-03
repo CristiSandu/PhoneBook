@@ -27,7 +27,7 @@
                      Clicked="settingsBtn_Clicked"/>
     </ContentPage.ToolbarItems>
 
-    <AbsoluteLayout Padding="10,20,10,10">
+    <AbsoluteLayout Padding="10,10,10,10">
         <CollectionView x:Name="historyListView" 
                         SelectedItem="historyListView_ItemSelected"
                         AbsoluteLayout.LayoutBounds = "0.5,0"
@@ -48,6 +48,7 @@
                             
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto" />
+                               
                             </Grid.ColumnDefinitions>
                             
                             <Label Grid.Column="1"
@@ -59,13 +60,18 @@
                                    Text="{Binding Path=Date}"
                                    Style="{StaticResource LabelStyle}"
                                    FontSize="Medium"/>
+                            <Label Grid.Column="3"
+                                   Text="{Binding Path=Date}"
+                                   Style="{StaticResource LabelStyle}"
+                                   FontSize="Medium"/>
+                            
                         </Grid>
                     </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
             <CollectionView.Header>
                 <StackLayout>
-                    <Label HorizontalOptions="Center"  Text="Test History" VerticalOptions="Center"/>
+                    <Label x:Name="nrOfCalls" Style="{StaticResource LabelStyle}" HorizontalOptions="Center"  Text="Number of Calls: " VerticalOptions="Center"/>
                 </StackLayout>
             </CollectionView.Header>
         </CollectionView>
