@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AgendaTelefonica.PagesTab.History"
+             xmlns:converter ="clr-namespace:AgendaTelefonica.Convertors"
               Title="History"
              BackgroundColor="{StaticResource AppBackgroundColor}"
              >
@@ -9,6 +10,12 @@
     <!--<NavigationPage.TitleView>
         <Label Text="History" FontSize="Large" TextColor="White" FontAttributes="Bold" />
     </NavigationPage.TitleView>-->
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converter:CountNumbersOfHistoryCalls x:Key="DateConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
     <ContentPage.ToolbarItems>
         <ToolbarItem x:Name="searchBtn" Text="Search"
@@ -57,13 +64,11 @@
                                    FontSize="Medium"/>
 
                             <Label Grid.Column="2"
-                                   Text="{Binding Path=Date}"
+                                   Text="{Binding Path=Date, Converter={StaticResource DateConverter}}"
                                    Style="{StaticResource LabelStyle}"
+                                   HorizontalOptions="StartAndExpand"
                                    FontSize="Medium"/>
-                            <Label Grid.Column="3"
-                                   Text="{Binding Path=Date}"
-                                   Style="{StaticResource LabelStyle}"
-                                   FontSize="Medium"/>
+                            
                             
                         </Grid>
                     </Frame>

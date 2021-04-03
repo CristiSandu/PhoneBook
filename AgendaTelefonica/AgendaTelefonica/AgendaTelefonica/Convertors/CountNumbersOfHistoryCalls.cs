@@ -10,6 +10,12 @@ namespace AgendaTelefonica.Convertors
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
+            if(value != null)
+            {
+                var data = value.ToString();
+                var parseDate = DateTime.Parse(data);
+                return parseDate.ToString("d/M/yyy, HH:mm", CultureInfo.CreateSpecificCulture("en-US"));
+            }
             return null;
         }
 
