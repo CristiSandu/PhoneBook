@@ -22,20 +22,19 @@ namespace AgendaTelefonica.Tools
         public SearchPage()
         {
             InitializeComponent();
-           
         }
-
          
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            Focus();
+
+            searchBarContacts.Focus();
             SQLiteConnection conn = new SQLiteConnection(App.DataBaseLocation);
-            //conn.CreateTable<Artists>();
             var contacts = conn.Table<Models.Contact>().ToList();
             searchBarContacts.Placeholder = $"Search in {contacts.Count()} contacts";
             _contacts = new ObservableCollection<Models.Contact>(contacts);
-             conn.Close();
+
+            conn.Close();
         }
 
         private async void contactsSearchListView_ItemSelected(object sender, SelectionChangedEventArgs e)
@@ -47,12 +46,6 @@ namespace AgendaTelefonica.Tools
             }
         }
 
-        public async void Focus()
-        {
-            searchBarContacts.Focus();
-        }
-
-
         private void searchBarContacts_TextChanged(object sender, TextChangedEventArgs e)
         {
             contactsSearchListView.ItemsSource = GetArtists(e.NewTextValue);
@@ -60,11 +53,10 @@ namespace AgendaTelefonica.Tools
 
         private IEnumerable GetArtists(string newTextValue = null)
         {
-            // var artists = editeartist.createList();
             SQLiteConnection conn = new SQLiteConnection(App.DataBaseLocation);
-            //conn.CreateTable<Artists>();
             var contacts = conn.Table<Models.Contact>().ToList();
             conn.Close();
+
             if (String.IsNullOrWhiteSpace(newTextValue))
                 return contacts;
 
@@ -81,5 +73,9 @@ namespace AgendaTelefonica.Tools
             return new string(chars).Normalize(NormalizationForm.FormC);
         }
 
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopToRootAsync();
+        }
     }
 }

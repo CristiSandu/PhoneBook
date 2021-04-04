@@ -35,16 +35,15 @@ namespace AgendaTelefonica.PagesTab
             _conn.CreateTable<Models.Contact>();
             _conn.CreateTable<HistoryElem>();
             var historyElements = _conn.Table<HistoryElem>().ToList();
+            var operation = "Call";
             _historyList = new ObservableCollection<HistoryDispMod>();
             foreach (HistoryElem h in historyElements)
             {
                 var getContactFromTel = _conn.Query<Models.Contact>("SELECT * FROM Contact WHERE id = ?", h.id_Contact);
                 var elem = getContactFromTel.ToList<Models.Contact>();
 
-                if (h.id_Contact == -1)
-                    nameContact = $"Call {h.phoneNumber}";
-                else
-                    nameContact = $"Call {elem[0].firstName} - {elem[0].secondName}";
+                operation = h.IsEmail ? "Email" : "Call";
+                nameContact = h.id_Contact == -1 ? $"{operation} {h.phoneNumber}" : $"{operation} {elem[0].firstName} - {elem[0].secondName}";
 
                 HistoryDispMod hdm = new HistoryDispMod
                 {

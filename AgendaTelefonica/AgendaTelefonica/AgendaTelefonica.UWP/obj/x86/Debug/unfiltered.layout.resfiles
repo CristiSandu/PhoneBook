@@ -29,9 +29,12 @@ Assets\Wide310x150Logo.scale-400.png
 AgendaTelefonica.UWP.xr.xml
 App.xbf
 MainPage.xbf
-add.scale-100.png
-add.scale-200.png
-add.scale-400.png
+arrow-left.scale-100.png
+arrow-left.scale-200.png
+arrow-left.scale-400.png
+callphone.scale-100.png
+callphone.scale-200.png
+callphone.scale-400.png
 contact_default.scale-100.png
 contact_default.scale-200.png
 contact_default.scale-400.png
@@ -56,6 +59,9 @@ perm_contact_calendar.scale-400.png
 phone.scale-100.png
 phone.scale-200.png
 phone.scale-400.png
+plus.scale-100.png
+plus.scale-200.png
+plus.scale-400.png
 search.scale-100.png
 search.scale-200.png
 search.scale-400.png

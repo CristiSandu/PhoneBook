@@ -27,7 +27,7 @@
                  Priority="0"
                      Clicked="searchBtn_Clicked"/>
         <ToolbarItem x:Name="addContBtn" Order="Primary"
-                     IconImageSource="add.png"
+                     IconImageSource="plus.png"
                      Text="Add"
                      Priority="1"
                      Clicked="addContBtn_Clicked" />
@@ -78,8 +78,7 @@
         <Button x:Name="callNumber" 
                
                 Clicked="callNumber_Clicked"
-                CornerRadius="90" 
-                ImageSource="keyboard.png"
+                Style="{StaticResource CallButtonStyle}"
                 AbsoluteLayout.LayoutBounds="0.5,0.9,70,70" 
                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
     </AbsoluteLayout>

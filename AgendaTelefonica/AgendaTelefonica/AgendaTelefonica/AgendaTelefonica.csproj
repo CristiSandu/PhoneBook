@@ -11,7 +11,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="IMG\add.svg" />
+    <None Remove="IMG\arrow-left.svg" />
+    <None Remove="IMG\callphone.svg" />
     <None Remove="IMG\contact_default.svg" />
     <None Remove="IMG\favorite.svg" />
     <None Remove="IMG\favorite_border.svg" />
@@ -20,10 +21,13 @@
     <None Remove="IMG\keyboard_backspace.svg" />
     <None Remove="IMG\perm_contact_calendar.svg" />
     <None Remove="IMG\phone.svg" />
+    <None Remove="IMG\plus.svg" />
     <None Remove="IMG\search.svg" />
   </ItemGroup>
 
   <ItemGroup>
+    <SharedImage Include="IMG\arrow-left.svg" />
+    <SharedImage Include="IMG\callphone.svg" />
     <SharedImage Include="IMG\favorite.svg" BaseSize="20,20" />
   </ItemGroup>
 
@@ -37,7 +41,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <SharedImage Include="IMG\add.svg" />
     <SharedImage Include="IMG\contact_default.svg" BaseSize="20,20" />
     <SharedImage Include="IMG\favorite_border.svg" />
     <SharedImage Include="IMG\history.svg" />
@@ -45,7 +48,8 @@
     <SharedImage Include="IMG\keyboard_backspace.svg" />
     <SharedImage Include="IMG\perm_contact_calendar.svg" />
     <SharedImage Include="IMG\phone.svg" BaseSize="50,50" />
-    <SharedImage Include="IMG\search.svg" BaseSize="45,45" />
+    <SharedImage Include="IMG\plus.svg" />
+    <SharedImage Include="IMG\search.svg" />
   </ItemGroup>
 
   <ItemGroup>

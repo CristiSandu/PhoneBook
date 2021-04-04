@@ -18,7 +18,7 @@
                  Priority="0"
                      Clicked="deleteAllCont_Clicked"/>
         <ToolbarItem Order="Primary"
-                     IconImageSource="add.png"
+                     IconImageSource="plus.png"
                      Text="Add"
                      Priority="1"
                      Clicked="addContact_Clicked" />
@@ -70,8 +70,9 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-        <Button x:Name="callNumber"  Clicked="callNumber_Clicked"  CornerRadius="90" 
-                ImageSource="keyboard.png"
+        <Button x:Name="callNumber" 
+                Clicked="callNumber_Clicked"  
+                Style="{StaticResource CallButtonStyle}"
                 AbsoluteLayout.LayoutBounds="0.5,0.9,70,70" 
                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
     </AbsoluteLayout>

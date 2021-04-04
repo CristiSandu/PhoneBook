@@ -17,13 +17,14 @@ namespace AgendaTelefonica.PageCont
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DisContact : ContentPage
     {
+        private const bool V = true;
         Models.Contact _cont;
-        SQLiteConnection _conn ;
+        SQLiteConnection _conn;
         public DisContact()
         {
             InitializeComponent();
             _cont = (Models.Contact)BindingContext;
-           
+
         }
 
         public DisContact(Models.Contact contact)
@@ -44,7 +45,8 @@ namespace AgendaTelefonica.PageCont
             {
                 Stream ms = new MemoryStream(b);
                 contactPhoto.Source = ImageSource.FromStream(() => ms);
-            } else
+            }
+            else
             {
                 contactPhoto.Source = "contact_default.png";
                 contactPhoto.Aspect = Aspect.AspectFit;
@@ -63,24 +65,67 @@ namespace AgendaTelefonica.PageCont
 
         private async void callBtn_Clicked(object sender, EventArgs e)
         {
-            if (call(phoneNumber.Text))
+            var btn = sender as Button;
+            if (btn.Text == "Call")
             {
-                _conn = new SQLiteConnection(App.DataBaseLocation);
-                _conn.CreateTable<HistoryElem>();
-                DateTime dateTime = DateTime.Now;
-                HistoryElem historyElem = new HistoryElem
+                if (Call(phoneNumber.Text))
                 {
-                    id_Contact = _cont.id,
-                    date = dateTime
-                };
-
-                _conn.Insert(historyElem);
-                _conn.Close();
+                    AddToHistory(false);
+                }
+            }else
+            {
+                if ( await SendEmail(email.Text))
+                {
+                    AddToHistory(true);
+                }
             }
+
             await Navigation.PopToRootAsync();
         }
 
-        public bool call(string phoneNumber)
+        public async void AddToHistory(bool isEmail)
+        {
+            _conn = new SQLiteConnection(App.DataBaseLocation);
+            _conn.CreateTable<HistoryElem>();
+            DateTime dateTime = DateTime.Now;
+            HistoryElem historyElem = new HistoryElem
+            {
+                id_Contact = _cont.id,
+                IsEmail = isEmail,
+                date = dateTime
+            };
+
+            _conn.Insert(historyElem);
+            _conn.Close();
+        }
+
+
+        public async Task<bool> SendEmail(string email)
+        {
+            var list_emails = new List<string> { email };
+            try
+            {
+                var message = new EmailMessage
+                {
+                    To = list_emails,
+                };
+                await Email.ComposeAsync(message);
+            }
+            catch (FeatureNotSupportedException fbsEx)
+            {
+                // Email is not supported on this device
+                return false;
+            }
+            catch (Exception ex)
+            {
+                // Some other exception occurred
+                return false;
+            }
+
+            return true;
+        }
+
+        public bool Call(string phoneNumber)
         {
             try
             {

@@ -69,9 +69,6 @@ S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaT
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\contact_default@2x.png
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\contact_default@3x.png
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetizer.stamp
-S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\add.png
-S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\add@2x.png
-S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\add@3x.png
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\favorite_border.png
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\favorite_border@2x.png
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\favorite_border@3x.png
@@ -90,9 +87,6 @@ S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaT
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\phone.png
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\phone@2x.png
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\phone@3x.png
-S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\search.png
-S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\search@2x.png
-S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\search@3x.png
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\bin\iPhoneSimulator\Debug\Microcharts.dll
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\bin\iPhoneSimulator\Debug\Microcharts.iOS.dll
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\bin\iPhoneSimulator\Debug\SkiaSharp.dll
@@ -102,3 +96,15 @@ S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaT
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\favorite.png
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\favorite@2x.png
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\favorite@3x.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\callphone.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\callphone@2x.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\callphone@3x.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\arrow-left.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\arrow-left@2x.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\arrow-left@3x.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\plus.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\plus@2x.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\plus@3x.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\search.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\search@2x.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\search@3x.png

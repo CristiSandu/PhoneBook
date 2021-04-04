@@ -24,7 +24,7 @@
                  Priority="0"
                      Clicked="searchBtn_Clicked"/>
         <ToolbarItem x:Name="addContBtn" Order="Primary"
-                     IconImageSource="add.png"
+                     IconImageSource="plus.png"
                      Text="Add"
                      Priority="1"
                      Clicked="addContBtn_Clicked" />
@@ -44,6 +44,7 @@
             <CollectionView.ItemsLayout>
                 <GridItemsLayout Orientation="Vertical" Span="1" HorizontalItemSpacing="7" VerticalItemSpacing="7"/>
             </CollectionView.ItemsLayout>
+            
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Frame  Style="{StaticResource FrameStyle}" >
@@ -68,8 +69,6 @@
                                    Style="{StaticResource LabelStyle}"
                                    HorizontalOptions="StartAndExpand"
                                    FontSize="Medium"/>
-                            
-                            
                         </Grid>
                     </Frame>
                 </DataTemplate>
@@ -83,8 +82,7 @@
 
         <Button x:Name="callNumber" 
                 Clicked="callNumber_Clicked" 
-                CornerRadius="90" 
-                ImageSource="keyboard.png"
+                Style="{StaticResource CallButtonStyle}"
                 AbsoluteLayout.LayoutBounds="0.5,0.9,70,70" 
                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
     </AbsoluteLayout>

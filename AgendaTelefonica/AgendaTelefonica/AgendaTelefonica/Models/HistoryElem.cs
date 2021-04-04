@@ -17,6 +17,8 @@ namespace AgendaTelefonica.Models
 
         public string phoneNumber { set; get; }
 
+        public bool IsEmail { set; get; }
+
 
 
         public SQLiteConnection getConnection()
