@@ -23,6 +23,7 @@ namespace AgendaTelefonica.PageCont
         {
             InitializeComponent();
             _cont = (Models.Contact)BindingContext;
+           
         }
 
         public DisContact(Models.Contact contact)
@@ -47,6 +48,11 @@ namespace AgendaTelefonica.PageCont
             {
                 contactPhoto.Source = "contact_default.png";
                 contactPhoto.Aspect = Aspect.AspectFit;
+            }
+
+            if (_cont.favorite == true)
+            {
+                starImg.Source = "favorite.svg";
             }
         }
 

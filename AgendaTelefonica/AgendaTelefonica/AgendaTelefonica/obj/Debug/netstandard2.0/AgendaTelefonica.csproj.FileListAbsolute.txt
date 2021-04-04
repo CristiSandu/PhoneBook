@@ -20,3 +20,4 @@ S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaT
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\obj\Debug\netstandard2.0\Tools\SeatingsPage.xaml.g.cs
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\obj\Debug\netstandard2.0\PageCont\DialPage.xaml.g.cs
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\obj\Debug\netstandard2.0\PagesTab\TypesPages.xaml.g.cs
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\obj\Debug\netstandard2.0\AgendaTelefonica.csprojAssemblyReference.cache
