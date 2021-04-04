@@ -1,5 +1,6 @@
 ﻿obj\Debug\90\resizetize\r\drawable-hdpi\add.png
 obj\Debug\90\resizetize\r\drawable-hdpi\contact_default.png
+obj\Debug\90\resizetize\r\drawable-hdpi\favorite.png
 obj\Debug\90\resizetize\r\drawable-hdpi\favorite_border.png
 obj\Debug\90\resizetize\r\drawable-hdpi\history.png
 obj\Debug\90\resizetize\r\drawable-hdpi\keyboard.png
@@ -9,6 +10,7 @@ obj\Debug\90\resizetize\r\drawable-hdpi\phone.png
 obj\Debug\90\resizetize\r\drawable-hdpi\search.png
 obj\Debug\90\resizetize\r\drawable-mdpi\add.png
 obj\Debug\90\resizetize\r\drawable-mdpi\contact_default.png
+obj\Debug\90\resizetize\r\drawable-mdpi\favorite.png
 obj\Debug\90\resizetize\r\drawable-mdpi\favorite_border.png
 obj\Debug\90\resizetize\r\drawable-mdpi\history.png
 obj\Debug\90\resizetize\r\drawable-mdpi\keyboard.png
@@ -18,6 +20,7 @@ obj\Debug\90\resizetize\r\drawable-mdpi\phone.png
 obj\Debug\90\resizetize\r\drawable-mdpi\search.png
 obj\Debug\90\resizetize\r\drawable-xhdpi\add.png
 obj\Debug\90\resizetize\r\drawable-xhdpi\contact_default.png
+obj\Debug\90\resizetize\r\drawable-xhdpi\favorite.png
 obj\Debug\90\resizetize\r\drawable-xhdpi\favorite_border.png
 obj\Debug\90\resizetize\r\drawable-xhdpi\history.png
 obj\Debug\90\resizetize\r\drawable-xhdpi\keyboard.png
@@ -27,6 +30,7 @@ obj\Debug\90\resizetize\r\drawable-xhdpi\phone.png
 obj\Debug\90\resizetize\r\drawable-xhdpi\search.png
 obj\Debug\90\resizetize\r\drawable-xxhdpi\add.png
 obj\Debug\90\resizetize\r\drawable-xxhdpi\contact_default.png
+obj\Debug\90\resizetize\r\drawable-xxhdpi\favorite.png
 obj\Debug\90\resizetize\r\drawable-xxhdpi\favorite_border.png
 obj\Debug\90\resizetize\r\drawable-xxhdpi\history.png
 obj\Debug\90\resizetize\r\drawable-xxhdpi\keyboard.png
@@ -36,6 +40,7 @@ obj\Debug\90\resizetize\r\drawable-xxhdpi\phone.png
 obj\Debug\90\resizetize\r\drawable-xxhdpi\search.png
 obj\Debug\90\resizetize\r\drawable-xxxhdpi\add.png
 obj\Debug\90\resizetize\r\drawable-xxxhdpi\contact_default.png
+obj\Debug\90\resizetize\r\drawable-xxxhdpi\favorite.png
 obj\Debug\90\resizetize\r\drawable-xxxhdpi\favorite_border.png
 obj\Debug\90\resizetize\r\drawable-xxxhdpi\history.png
 obj\Debug\90\resizetize\r\drawable-xxxhdpi\keyboard.png

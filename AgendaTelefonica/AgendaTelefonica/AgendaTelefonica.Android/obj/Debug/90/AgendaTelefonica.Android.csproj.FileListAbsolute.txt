@@ -571,3 +571,8 @@ S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaT
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.Android\obj\Debug\90\android\src\crc64bb223c2be3a01e03\SKCanvasViewRendererBase_2.java
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.Android\obj\Debug\90\android\src\crc64bb223c2be3a01e03\SKGLViewRenderer.java
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.Android\obj\Debug\90\android\src\crc64bb223c2be3a01e03\SKGLViewRendererBase_2.java
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.Android\obj\Debug\90\resizetize\r\drawable-hdpi\favorite.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.Android\obj\Debug\90\resizetize\r\drawable-mdpi\favorite.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.Android\obj\Debug\90\resizetize\r\drawable-xhdpi\favorite.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.Android\obj\Debug\90\resizetize\r\drawable-xxhdpi\favorite.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.Android\obj\Debug\90\resizetize\r\drawable-xxxhdpi\favorite.png

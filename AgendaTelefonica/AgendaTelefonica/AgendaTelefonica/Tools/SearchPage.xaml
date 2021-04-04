@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AgendaTelefonica.Tools.SearchPage"
-                NavigationPage.HasNavigationBar="False">
+                NavigationPage.HasNavigationBar="False"
+              BackgroundColor="{StaticResource AppBackgroundColor}"
+             >
     <StackLayout>
         <StackLayout Orientation="Horizontal" Padding="0,0,10,0" Spacing="0" BackgroundColor="#2CA0FD">
             <Button Text="Back" HeightRequest="50" WidthRequest="60" />

@@ -99,3 +99,6 @@ S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaT
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\bin\iPhoneSimulator\Debug\SkiaSharp.Views.iOS.dll
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\bin\iPhoneSimulator\Debug\Microcharts.Forms.dll
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\bin\iPhoneSimulator\Debug\SkiaSharp.Views.Forms.dll
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\favorite.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\favorite@2x.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.iOS\obj\iPhoneSimulator\Debug\resizetize\r\favorite@3x.png

@@ -43,11 +43,11 @@ namespace AgendaTelefonica.PagesTab
             conn.Close();
         }
 
-        private async void favoriteListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void favoriteListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (e.SelectedItem != null)
+            var cont = e.CurrentSelection.FirstOrDefault() as Contact;
+            if (e.CurrentSelection != null)
             {
-                Models.Contact cont = e.SelectedItem as Models.Contact;
                 await Navigation.PushAsync(new DisContact(cont));
             }
         }
@@ -71,6 +71,8 @@ namespace AgendaTelefonica.PagesTab
         {
             await Navigation.PushAsync(new SearchPage());
         }
+
+       
     }
 
 

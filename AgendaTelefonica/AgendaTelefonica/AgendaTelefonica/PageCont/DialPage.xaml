@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AgendaTelefonica.PageCont.DialPage"
              xmlns:models="clr-namespace:AgendaTelefonica.Models"
-              BindingContext="{StaticResource numberView}">
+              BindingContext="{StaticResource numberView}"
+              BackgroundColor="{StaticResource AppBackgroundColor}"
+             >
 
     <ContentPage.Resources>
         <ResourceDictionary>
