@@ -8,10 +8,22 @@
     <ContentPage.Resources>
         <ResourceDictionary>
             <models:DialModeliNotifay x:Key="numberView"/>
+
+
+            <Style x:Key="ButtonCallStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource SecondaryColor}"/>
+                <Setter Property="TextColor" Value="{StaticResource ButtonColor}" />
+                <Setter Property="FontSize" Value="30"/>
+                <Setter Property="CornerRadius" Value="30"/>
+
+            </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
 
     <StackLayout  Padding="40,0,40,0">
+
+       
+
         <Grid RowSpacing="10" ColumnSpacing="10">
             <Grid.RowDefinitions>
                 <RowDefinition Height="2*" />
@@ -21,28 +33,67 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
+
             </Grid.RowDefinitions>
 
+            <CollectionView x:Name="cotactsList" 
+                        SelectionChanged="cotactsList_SelectionChanged"
+                        SelectionMode="Single"
+                             Grid.Row="0" Grid.ColumnSpan="3">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical"
+                                 Span="1"
+                                 HorizontalItemSpacing="7"
+                                 VerticalItemSpacing="7"/>
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+
+                        <Grid Padding="5,5,5,5"  >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="1"
+                                   Text="{Binding firstName}"
+                                   Style="{StaticResource LabelStyle}"
+                                   FontSize="Medium"/>
+
+                            <Label Grid.Row="1"
+                                   Grid.Column="1"
+                                   Text="{Binding Path=phoneNumber}"
+                                   Style="{StaticResource LabelStyle}"
+                                   TextColor="Gray"
+                                   FontSize="Medium"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
 
 
-            <Label x:Name="listMach" Grid.Row="0" Grid.ColumnSpan="3" Text="TestMarime" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" FontSize="50"></Label>
+           <!--<Label x:Name="listMach" Grid.Row="0" Grid.ColumnSpan="3" Text="TestMarime" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" FontSize="50"></Label>
+-->
+            <Label x:Name="labelNumber" Grid.Row="1" Grid.ColumnSpan="3" Text="{Binding Path=Number_Printer, Mode=OneWay}"  TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" FontSize="50"></Label>
 
-            <Label x:Name="labelNumber" Grid.Row="1" Grid.ColumnSpan="3" Text="{Binding Path=Number_Printer, Mode=OneWay}" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" FontSize="50"></Label>
+            <Button x:Name="btnNr1"  Grid.Row="2" Grid.Column="0" Text="1" Clicked="btnNr_Clicked"  Style="{StaticResource ButtonCallStyle}" />
+            <Button x:Name="btnNr2"  Grid.Row="2" Grid.Column="1" Text="2" Clicked="btnNr_Clicked"  Style="{StaticResource ButtonCallStyle}" />
+            <Button x:Name="btnNr3"  Grid.Row="2" Grid.Column="2" Text="3" Clicked="btnNr_Clicked"  Style="{StaticResource ButtonCallStyle}" />
 
-            <Button x:Name="btnNr1" BorderRadius="30" Grid.Row="2" Grid.Column="0" Text="1" Clicked="btnNr_Clicked"  FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
-            <Button x:Name="btnNr2" BorderRadius="30" Grid.Row="2" Grid.Column="1" Text="2" Clicked="btnNr_Clicked"  FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
-            <Button x:Name="btnNr3" BorderRadius="30" Grid.Row="2" Grid.Column="2" Text="3" Clicked="btnNr_Clicked" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
+            <Button x:Name="btnNr4"  Grid.Row="3" Grid.Column="0" Text="4" Clicked="btnNr_Clicked"  Style="{StaticResource ButtonCallStyle}" />
+            <Button x:Name="btnNr5"  Grid.Row="3" Grid.Column="1" Text="5" Clicked="btnNr_Clicked"  Style="{StaticResource ButtonCallStyle}" />
+            <Button x:Name="btnNr6"  Grid.Row="3" Grid.Column="2" Text="6" Clicked="btnNr_Clicked"  Style="{StaticResource ButtonCallStyle}" />
 
-            <Button x:Name="btnNr4" BorderRadius="30" Grid.Row="3" Grid.Column="0" Text="4" Clicked="btnNr_Clicked" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
-            <Button x:Name="btnNr5" BorderRadius="30" Grid.Row="3" Grid.Column="1" Text="5" Clicked="btnNr_Clicked" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
-            <Button x:Name="btnNr6" BorderRadius="30" Grid.Row="3" Grid.Column="2" Text="6" Clicked="btnNr_Clicked" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
+            <Button x:Name="btnNr7"  Grid.Row="4" Grid.Column="0" Text="7" Clicked="btnNr_Clicked"  Style="{StaticResource ButtonCallStyle}" />
+            <Button x:Name="btnNr8"  Grid.Row="4" Grid.Column="1" Text="8" Clicked="btnNr_Clicked"  Style="{StaticResource ButtonCallStyle}" />
+            <Button x:Name="btnNr9"  Grid.Row="4" Grid.Column="2" Text="9" Clicked="btnNr_Clicked"  Style="{StaticResource ButtonCallStyle}" />
 
-            <Button x:Name="btnNr7" BorderRadius="30" Grid.Row="4" Grid.Column="0" Text="7" Clicked="btnNr_Clicked" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
-            <Button x:Name="btnNr8" BorderRadius="30" Grid.Row="4" Grid.Column="1" Text="8" Clicked="btnNr_Clicked" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
-            <Button x:Name="btnNr9" BorderRadius="30" Grid.Row="4" Grid.Column="2" Text="9" Clicked="btnNr_Clicked" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
-
-            <Button x:Name="btnNr0" BorderRadius="30" Grid.Row="5" Grid.Column="1" Text="0" Clicked="btnNr_Clicked" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
-            <Button x:Name="btnDelete" BorderRadius="30" Grid.Row="5" Grid.Column="2" Text="C" Clicked="btnNr_Clicked" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
+            <Button x:Name="btnNr0"    Grid.Row="5" Grid.Column="1" Text="0" Clicked="btnNr_Clicked"  Style="{StaticResource ButtonCallStyle}" />
+            <Button x:Name="btnDelete" Grid.Row="5" Grid.Column="2" Text="C" Clicked="btnNr_Clicked"  Style="{StaticResource ButtonCallStyle}" />
 
             <StackLayout  Grid.Row="6" Grid.Column="1">
                 <Button x:Name="btnDial"

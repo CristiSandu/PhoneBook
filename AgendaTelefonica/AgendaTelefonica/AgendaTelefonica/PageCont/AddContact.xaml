@@ -21,10 +21,10 @@
                 <Entry x:Name="prenumeContact" Placeholder="Second Name" PlaceholderColor="{StaticResource PlaceHolderColor}" TextColor="{StaticResource TextColor}" AbsoluteLayout.LayoutBounds="10, 230 , 390, 40"/>
         </Frame>
         <Frame Style="{StaticResource FrameStyle}" AbsoluteLayout.LayoutBounds="10,300 , 390, 60">
-                <Entry x:Name="nrTelefon" Placeholder="Phone Number" PlaceholderColor="{StaticResource PlaceHolderColor}" TextColor="{StaticResource TextColor}" AbsoluteLayout.LayoutBounds="10, 300 , 390, 40"/>
+                <Entry x:Name="nrTelefon" Keyboard="Telephone" Placeholder="Phone Number" PlaceholderColor="{StaticResource PlaceHolderColor}" TextColor="{StaticResource TextColor}" AbsoluteLayout.LayoutBounds="10, 300 , 390, 40"/>
         </Frame>
         <Frame Style="{StaticResource FrameStyle}" AbsoluteLayout.LayoutBounds="10, 370 , 390, 60">
-                <Entry x:Name="email" Placeholder="Email" PlaceholderColor="{StaticResource PlaceHolderColor}" TextColor="{StaticResource TextColor}" AbsoluteLayout.LayoutBounds="10, 370 , 390, 40"/>
+                <Entry x:Name="email" Keyboard="Email" Placeholder="Email" PlaceholderColor="{StaticResource PlaceHolderColor}" TextColor="{StaticResource TextColor}" AbsoluteLayout.LayoutBounds="10, 370 , 390, 40"/>
         </Frame>
             
         <Button x:Name="saveBtn" Text="Save" Clicked="saveBtn_Clicked" Style="{StaticResource ButtonStyle}" AbsoluteLayout.LayoutBounds="50, 450 "/>

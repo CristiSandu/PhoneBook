@@ -9,6 +9,9 @@ using Xamarin.Forms.Xaml;
 using AgendaTelefonica.Models;
 using Xamarin.Essentials;
 using SQLite;
+using System.Collections;
+using System.Globalization;
+using AgendaTelefonica.Models;
 
 namespace AgendaTelefonica.PageCont
 {
@@ -25,6 +28,49 @@ namespace AgendaTelefonica.PageCont
         {
             base.OnAppearing();
             labelNumber.BindingContext = dialModel;
+        }
+
+        private IEnumerable GetPhoneNumber(string newTextValue = null)
+        {
+            SQLiteConnection conn = new SQLiteConnection(App.DataBaseLocation);
+            var contacts = conn.Table<Models.Contact>().ToList();
+            conn.Close();
+            if (String.IsNullOrWhiteSpace(newTextValue))
+                return contacts;
+
+            return contacts.Where(c => c.phoneNumber.StartsWith(RemoveDiacritics(newTextValue), true, null));
+        }
+
+        public string RemoveDiacritics(string text)
+        {
+            if (String.IsNullOrWhiteSpace(text))
+                return text;
+
+            text = text.Normalize(NormalizationForm.FormD);
+            var chars = text.Where(c => CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark).ToArray();
+            return new string(chars).Normalize(NormalizationForm.FormC);
+        }
+
+        private void cotactsList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var cont = e.CurrentSelection.FirstOrDefault() as Models.Contact;
+            if (e.CurrentSelection != null)
+            {
+                dialModel.Number = cont.phoneNumber;
+                string value_pnone = "";
+                int i = 0;
+                while (value_pnone.Length < 12)
+                {
+                    if (value_pnone.Length == 4 ||
+                        value_pnone.Length == 8)
+                    {
+                        value_pnone += " ";
+                    }
+                    value_pnone += cont.phoneNumber[i];
+                    i++;
+                }
+                dialModel.Number_Printer = value_pnone;
+            }
         }
 
         private void btnNr_Clicked(object sender, EventArgs e)
@@ -44,14 +90,16 @@ namespace AgendaTelefonica.PageCont
             else if (dialModel.Number.Length < 10)
             {
                 if (dialModel.Number.Length == 4 ||
-                    dialModel.Number.Length == 7 )
+                    dialModel.Number.Length == 7)
                 {
                     dialModel.Number_Printer += " ";
                 }
-                    dialModel.Number += btn.Text;
-                    dialModel.Number_Printer += btn.Text;
-                
+                dialModel.Number += btn.Text;
+                dialModel.Number_Printer += btn.Text;
             }
+
+
+            cotactsList.ItemsSource = GetPhoneNumber(dialModel.Number);
         }
 
         private async void btnDial_Clicked(object sender, EventArgs e)
@@ -98,5 +146,8 @@ namespace AgendaTelefonica.PageCont
             }
             return true;
         }
+
+
+
     }
 }

@@ -14,7 +14,7 @@ namespace AgendaTelefonica.Convertors
             {
                 var data = value.ToString();
                 var parseDate = DateTime.Parse(data);
-                return parseDate.ToString("d/M/yyy, HH:mm", CultureInfo.CreateSpecificCulture("en-US"));
+                return parseDate.ToString("dd/MM/yyy, HH:mm", CultureInfo.CreateSpecificCulture("en-US"));
             }
             return null;
         }

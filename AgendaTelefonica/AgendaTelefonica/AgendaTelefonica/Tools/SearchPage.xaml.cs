@@ -81,9 +81,5 @@ namespace AgendaTelefonica.Tools
             return new string(chars).Normalize(NormalizationForm.FormC);
         }
 
-        private void searchBarContacts_SearchButtonPressed(object sender, EventArgs e)
-        {
-
-        }
     }
 }
