@@ -16,6 +16,7 @@
                 <Setter Property="BackgroundColor" Value="{StaticResource SecondaryColor}"/>
                 <Setter Property="TextColor" Value="{StaticResource ButtonColor}" />
                 <Setter Property="FontSize" Value="30"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
                 <Setter Property="CornerRadius" Value="30"/>
 
             </Style>
@@ -71,7 +72,7 @@
                                    Text="{Binding Path=phoneNumber}"
                                    Style="{StaticResource LabelStyle}"
                                    TextColor="Gray"
-                                   FontSize="Medium"/>
+                                   FontSize="Small"/>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

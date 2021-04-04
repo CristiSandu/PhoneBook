@@ -51,10 +51,10 @@
             </StackLayout>
         </StackLayout>
         
-        <StackLayout Orientation="Horizontal" Spacing="40" HorizontalOptions="Center">
-            <Button x:Name="callBtn" Text="Call" Clicked="callBtn_Clicked" Style="{StaticResource ButtonStyle}"  HorizontalOptions="End"/>
-            <Button x:Name="sendEmailBtn" Text="Write Email" Clicked="callBtn_Clicked" Style="{StaticResource ButtonStyle}"  HorizontalOptions="End"/>
-            <Button x:Name ="backBtn" Text="Back" Clicked="backBtn_Clicked" Style="{StaticResource ButtonStyle}" HorizontalOptions="Start"/>
+        <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Center">
+            <Button x:Name="callBtn" Text="Call" Clicked="callBtn_Clicked" Style="{StaticResource ButtonStyle}"  />
+            <Button x:Name="sendEmailBtn" ImageSource="mail.png" Clicked="callBtn_Clicked" Style="{StaticResource ButtonStyle}"  />
+            <Button x:Name ="backBtn" Text="Back" Clicked="backBtn_Clicked" Style="{StaticResource ButtonStyle}" />
             <Image x:Name="starImg" Source="{Binding Path=favorite, Converter={StaticResource FavoriteConvertor}}" HeightRequest="30" WidthRequest="30"/>
         </StackLayout>
 

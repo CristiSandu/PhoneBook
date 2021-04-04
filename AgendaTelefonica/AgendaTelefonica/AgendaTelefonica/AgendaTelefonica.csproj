@@ -17,10 +17,8 @@
     <None Remove="IMG\favorite.svg" />
     <None Remove="IMG\favorite_border.svg" />
     <None Remove="IMG\history.svg" />
-    <None Remove="IMG\keyboard.svg" />
-    <None Remove="IMG\keyboard_backspace.svg" />
+    <None Remove="IMG\mail.svg" />
     <None Remove="IMG\perm_contact_calendar.svg" />
-    <None Remove="IMG\phone.svg" />
     <None Remove="IMG\plus.svg" />
     <None Remove="IMG\search.svg" />
   </ItemGroup>
@@ -44,10 +42,8 @@
     <SharedImage Include="IMG\contact_default.svg" BaseSize="20,20" />
     <SharedImage Include="IMG\favorite_border.svg" />
     <SharedImage Include="IMG\history.svg" />
-    <SharedImage Include="IMG\keyboard.svg" BaseSize="50,50" />
-    <SharedImage Include="IMG\keyboard_backspace.svg" />
+    <SharedImage Include="IMG\mail.svg" />
     <SharedImage Include="IMG\perm_contact_calendar.svg" />
-    <SharedImage Include="IMG\phone.svg" BaseSize="50,50" />
     <SharedImage Include="IMG\plus.svg" />
     <SharedImage Include="IMG\search.svg" />
   </ItemGroup>

@@ -79,18 +79,9 @@ S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaT
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\history.scale-100.png
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\history.scale-200.png
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\history.scale-400.png
-S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\keyboard.scale-100.png
-S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\keyboard.scale-200.png
-S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\keyboard.scale-400.png
-S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\keyboard_backspace.scale-100.png
-S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\keyboard_backspace.scale-200.png
-S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\keyboard_backspace.scale-400.png
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\perm_contact_calendar.scale-100.png
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\perm_contact_calendar.scale-200.png
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\perm_contact_calendar.scale-400.png
-S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\phone.scale-100.png
-S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\phone.scale-200.png
-S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\phone.scale-400.png
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\bin\x86\Debug\Microcharts.Uwp.dll
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\bin\x86\Debug\Microcharts.dll
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\bin\x86\Debug\libEGL.dll
@@ -116,3 +107,6 @@ S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaT
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\search.scale-100.png
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\search.scale-200.png
 S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\search.scale-400.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\mail.scale-100.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\mail.scale-200.png
+S:\Cristi\App-Xamarin\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica\AgendaTelefonica.UWP\obj\x86\Debug\resizetize\r\Assets\mail.scale-400.png
