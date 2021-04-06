@@ -20,7 +20,8 @@
 
     <StackLayout Padding="20,8,20,20" Spacing="30">
         <StackLayout Spacing="10">
-            <ic:CircleImage x:Name="contactPhoto" WidthRequest="150" HeightRequest="150" Aspect="AspectFill" />
+            <ic:CircleImage x:Name="contactPhoto" WidthRequest="150" HeightRequest="150" Aspect="AspectFill" AbsoluteLayout.LayoutBounds = "0.5,0"
+                        AbsoluteLayout.LayoutFlags = "PositionProportional"/>
             <StackLayout>
                 <Label Text="Nume" Style="{StaticResource LabelShowWind}"/>
                 <Frame Style="{StaticResource FrameStyle}">

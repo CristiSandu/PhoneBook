@@ -12,11 +12,11 @@
     </NavigationPage.TitleView>-->
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Search"
+        <ToolbarItem x:Name ="searchContact" Text="Search"
                  IconImageSource="search.png"
                  Order="Primary"
                  Priority="0"
-                     Clicked="deleteAllCont_Clicked"/>
+                     Clicked="searchContact_Clicked"/>
         <ToolbarItem Order="Primary"
                      IconImageSource="plus.png"
                      Text="Add"
@@ -26,6 +26,10 @@
                      Text="Settings"
                      Priority="2"
                      Clicked="settingsBtn_Clicked" />
+        <ToolbarItem x:Name ="deleteAll" Order="Secondary"
+                     Text="Delete All"
+                     Priority="2"
+                     Clicked="deleteAllCont_Clicked" />
     </ContentPage.ToolbarItems>
     
     <AbsoluteLayout Padding="10">

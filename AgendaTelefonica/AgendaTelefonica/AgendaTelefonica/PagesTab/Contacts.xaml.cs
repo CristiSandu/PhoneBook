@@ -52,14 +52,11 @@ namespace AgendaTelefonica.PagesTab
 
         private async void deleteAllCont_Clicked(object sender, EventArgs e)
         {
-            /*conn = contact.getConnection();
+            conn = contact.getConnection();
             conn.CreateTable<Models.Contact>();
             conn.DeleteAll<Models.Contact>();
             conn.DeleteAll<HistoryElem>();
-            conn.Close();*/
-
-            await Navigation.PushAsync(new SearchPage());
-
+            conn.Close();
         }
 
         private async void callNumber_Clicked(object sender, EventArgs e)
@@ -76,6 +73,11 @@ namespace AgendaTelefonica.PagesTab
         {
             await Navigation.PushAsync(new AddContact());
 
+        }
+
+        private async void searchContact_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SearchPage());
         }
     }
 }

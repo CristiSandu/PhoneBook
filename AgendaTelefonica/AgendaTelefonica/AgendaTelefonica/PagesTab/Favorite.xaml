@@ -22,9 +22,9 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem x:Name="searchBtn" Text="Search"
-                 IconImageSource="search.png"
-                 Order="Primary"
-                 Priority="0"
+                     IconImageSource="search.png"
+                     Order="Primary"
+                     Priority="0"
                      Clicked="searchBtn_Clicked"/>
         <ToolbarItem x:Name="addContBtn" Order="Primary"
                      IconImageSource="plus.png"

@@ -57,18 +57,7 @@ namespace AgendaTelefonica.PageCont
             if (e.CurrentSelection != null)
             {
                 dialModel.Number = cont.phoneNumber;
-                string value_pnone = "";
-                int i = 0;
-                while (value_pnone.Length < 12)
-                {
-                    if (value_pnone.Length == 4 ||
-                        value_pnone.Length == 8)
-                    {
-                        value_pnone += " ";
-                    }
-                    value_pnone += cont.phoneNumber[i];
-                    i++;
-                }
+                string value_pnone = $"{cont.phoneNumber.Substring(0,4)} {cont.phoneNumber.Substring(4, 3)} {cont.phoneNumber.Substring(7)}";
                 dialModel.Number_Printer = value_pnone;
             }
         }
