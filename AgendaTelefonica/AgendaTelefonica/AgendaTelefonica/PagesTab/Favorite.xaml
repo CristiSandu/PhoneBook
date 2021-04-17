@@ -44,10 +44,10 @@
                         AbsoluteLayout.LayoutFlags = "PositionProportional"
                         SelectionChanged="favoriteListView_SelectionChanged"
                         SelectionMode="Single" >
-            <!--SelectionChanged="favoriteListView_ItemSelected"-->  
+            <!--SelectionChanged="favoriteListView_ItemSelected"-->
             <CollectionView.ItemsLayout>
                 <GridItemsLayout Orientation="Vertical" Span="2" HorizontalItemSpacing="5" VerticalItemSpacing="5" />
-                
+
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
