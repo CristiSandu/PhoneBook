@@ -25,6 +25,6 @@
                 </TableSection>
             </TableRoot>
         </TableView>
-        <microcharts:ChartView x:Name="chartView" HeightRequest ="300" WidthRequest="400" />
+       
     </StackLayout>
 </ContentPage>
