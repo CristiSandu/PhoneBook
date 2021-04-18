@@ -26,9 +26,8 @@
                 <Entry x:Name="email" Keyboard="Email" Placeholder="Email" PlaceholderColor="{StaticResource PlaceHolderColor}" TextColor="{StaticResource TextColor}" AbsoluteLayout.LayoutBounds="10, 370 , 390, 40"/>
             </Frame>
 
-            <Button x:Name="saveBtn" Text="Save" Clicked="saveBtn_Clicked" Style="{StaticResource ButtonStyle}" AbsoluteLayout.LayoutBounds="50, 450 "/>
-            <Button x:Name="deleteBtn" Text="Delete" Clicked="deleteBtn_Clicked" Style="{StaticResource ButtonStyle}" AbsoluteLayout.LayoutBounds="140, 450" />
-            <Button x:Name="cancelBtn" Text="Cancel" Clicked="cancelBtn_Clicked" Style="{StaticResource ButtonStyle}" AbsoluteLayout.LayoutBounds="230, 450 "/>
+            <Button x:Name="saveBtn" Text="Save" Clicked="saveBtn_Clicked" Style="{StaticResource ButtonStyle}" AbsoluteLayout.LayoutBounds="100, 450 "/>
+            <Button x:Name="cancelBtn" Text="Cancel" Clicked="cancelBtn_Clicked" Style="{StaticResource ButtonStyle}" AbsoluteLayout.LayoutBounds="200, 450 "/>
             <Switch x:Name="addFavorite" AbsoluteLayout.LayoutBounds="340, 460"/>
 
 

@@ -43,15 +43,25 @@ namespace AgendaTelefonica.PagesTab
                 var elem = getContactFromTel.ToList<Models.Contact>();
 
                 operation = h.IsEmail ? "Email" : "Call";
-                nameContact = h.id_Contact == -1 ? $"{operation} {h.phoneNumber}" : $"{operation} {elem[0].firstName} - {elem[0].secondName}";
-
-                HistoryDispMod hdm = new HistoryDispMod
+                nameContact = "";
+                try
                 {
-                    Name = nameContact,
-                    Date = h.date.ToString()
-                };
+                    nameContact = h.id_Contact == -1 ? $"{operation} {h.phoneNumber}" : $"{operation} {elem[0].firstName} - {elem[0].secondName}";
+                }catch(ArgumentOutOfRangeException )
+                {
 
-                _historyList.Add(hdm);
+                }
+                if (nameContact != "")
+                {
+                    HistoryDispMod hdm = new HistoryDispMod
+                    {
+                        Name = nameContact,
+                        Date = h.date.ToString()
+                    };
+                    _historyList.Add(hdm);
+
+                }
+
             }
 
             historyListView.ItemsSource = _historyList;

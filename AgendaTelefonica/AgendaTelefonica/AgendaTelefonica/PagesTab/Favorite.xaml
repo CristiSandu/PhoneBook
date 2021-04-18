@@ -44,7 +44,6 @@
                         AbsoluteLayout.LayoutFlags = "PositionProportional"
                         SelectionChanged="favoriteListView_SelectionChanged"
                         SelectionMode="Single" >
-            <!--SelectionChanged="favoriteListView_ItemSelected"-->
             <CollectionView.ItemsLayout>
                 <GridItemsLayout Orientation="Vertical" Span="2" HorizontalItemSpacing="5" VerticalItemSpacing="5" />
 
@@ -82,18 +81,4 @@
                 AbsoluteLayout.LayoutBounds="0.5,0.9,70,70" 
                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
     </AbsoluteLayout>
-
-    <!--
-     <StackLayout Orientation="Horizontal">
-                            <Label x:Name="nameContact" Text="{Binding firstName}" VerticalOptions="Center" FontSize="Medium"/>
-                            <Label x:Name="secondName" Text="{Binding secondName}" VerticalOptions="Center" FontSize="Medium"/>
-                        </StackLayout>
-    
-    
-    
-    -->
-
-
-
-
 </ContentPage>

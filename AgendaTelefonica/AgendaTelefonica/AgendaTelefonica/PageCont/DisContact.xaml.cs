@@ -30,11 +30,9 @@ namespace AgendaTelefonica.PageCont
         public DisContact(Models.Contact contact)
         {
             InitializeComponent();
+            BindingContext = contact;
             _cont = contact;
-            firstName.Text = _cont.firstName;
-            secondName.Text = _cont.secondName;
-            phoneNumber.Text = _cont.phoneNumber;
-            email.Text = _cont.email;
+          
         }
 
         protected override void OnAppearing()
@@ -147,6 +145,20 @@ namespace AgendaTelefonica.PageCont
                 return false;
             }
             return true;
+        }
+
+        private async void delete_Clicked(object sender, EventArgs e)
+        {
+            var contact = (Models.Contact)BindingContext;
+            SQLiteConnection conn = contact.getConnection();
+            if (contact != null)
+                conn.Delete(contact);
+            conn.Delete(contact);
+
+            conn.Close();
+
+            await Navigation.PopAsync();
+
         }
     }
 }
