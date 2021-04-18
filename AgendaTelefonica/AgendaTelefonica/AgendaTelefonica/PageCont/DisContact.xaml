@@ -53,7 +53,7 @@
             </StackLayout>
 
             <StackLayout Orientation="Vertical" Spacing="5" HorizontalOptions="Center">
-                <StackLayout Orientation="Horizontal" Spacing="20" >
+                <StackLayout Orientation="Horizontal" Spacing="20">
                     <Button x:Name="callBtn" Text="Call" Clicked="callBtn_Clicked" Style="{StaticResource ButtonStyle}"  />
                     <Button x:Name="sendEmailBtn" ImageSource="mail.png" Clicked="callBtn_Clicked" Style="{StaticResource ButtonStyle}"  />
                     <Image x:Name="starImg" Source="{Binding Path=favorite, Converter={StaticResource FavoriteConvertor}}" HeightRequest="30" WidthRequest="30"/>

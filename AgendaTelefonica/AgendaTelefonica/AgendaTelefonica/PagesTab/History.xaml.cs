@@ -35,6 +35,7 @@ namespace AgendaTelefonica.PagesTab
             _conn.CreateTable<Models.Contact>();
             _conn.CreateTable<HistoryElem>();
             var historyElements = _conn.Table<HistoryElem>().ToList();
+            historyElements.Reverse();
             var operation = "Call";
             _historyList = new ObservableCollection<HistoryDispMod>();
             foreach (HistoryElem h in historyElements)
@@ -73,10 +74,6 @@ namespace AgendaTelefonica.PagesTab
             await Navigation.PushModalAsync(new Tools.SeatingsPage());
         }
 
-        private void historyListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-
-        }
 
         private async void callNumber_Clicked(object sender, EventArgs e)
         {
