@@ -10,34 +10,34 @@ Structural, este formată din 3 pagini principale **History** , **Favorite** și
 
 Un contact conțină: nume, prenume, nr de telefon (cu verificare dacă nr este de România și este valid), email(cu verificare de validitate), toggle(on - add to favorite contacts , off - not to favorite contacts), o imagine de profil aleasă din galerie.
 
-![](https://github.com/CristiSandu/PhoneBook/Images/Imagine1.jpg)
+![](https://github.com/CristiSandu/PhoneBook/tree/master/Images/Imagine1.jpg)
 
 2. **DisContact** - Este o pagina în care se afișează contactul alături de următoarele posibilități: sunare, trimitere mail sau ștergere contact.  
    Daca apare o steluta reprezinta faptul ca acel contact este la favorite.
 
-![](https://github.com/CristiSandu/PhoneBook/Images/Imagine2.jpg)
+![](https://github.com/CristiSandu/PhoneBook/tree/master/Images/Imagine2.jpg)
 
 3. **DialPage** - Pagina prezinta o tastatura care permite introducerea unui nr de telefon, iar în partea de sus se face o selecție pe numerele de telefon care încep cu nr scris până în momentul de fata. Daca se selecteaza un nr din lista se completeaza automat label-ul si se poate apela numarul.
 
-![](https://github.com/CristiSandu/PhoneBook/Images/Imagine3.jpg)
+![](https://github.com/CristiSandu/PhoneBook/tree/master/Images/Imagine3.jpg)
 
 4. **SearchPage** - Se poate face search prin contacte dupa Nume, in bara de search apar nr de contacte. Se poate selecta contactul din lista care apare
 
-![](https://github.com/CristiSandu/PhoneBook/Images/Imagine4.jpg)
+![](https://github.com/CristiSandu/PhoneBook/tree/master/Images/Imagine4.jpg)
 
 5. **SettingsPage** - nu am implementat nimic în settings interesant, sunt niște elemente hardcodate
 
 6. **History** - aici apare istoria apelurilor și a emailurilor trimise sub forma &quot;Call - nume&quot; sau &quot;Email - nume &quot; sau &quot;Call - nr de telefon&quot; pentru nr de telefon care nu se afla în agenda alături de data și ora . În partea de sus apare numărul de apeluri și mailuri din pagina. Pe fiecare pagina principala avem un buton pentru deschidere a **DialPage.**
 
-![](https://github.com/CristiSandu/PhoneBook/Images/Imagine5.jpg)
+![](https://github.com/CristiSandu/PhoneBook/tree/master/Images/Imagine5.jpg)
 
 7. **Favorite** - Pagina prezinta intr-un layout cu 2 coloane si n lini contactele favorite , culoarea de background este random si se modifica la updatarea UI-ului.
 
-![](https://github.com/CristiSandu/PhoneBook/Images/Imagine6.jpg)
+![](https://github.com/CristiSandu/PhoneBook/tree/master/Images/Imagine6.jpg)
 
 8. **Contacts** - Prezinta o lista cu contactele din telefon nume si nr de telefon
 
-![](https://github.com/CristiSandu/PhoneBook/Images/Imagine7.jpg)
+![](https://github.com/CristiSandu/PhoneBook/tree/master/Images/Imagine7.jpg)
 
 Modele Baza de date
 
@@ -117,10 +117,10 @@ Limbaje folosite :
 C# - este un limbaj orientat obiect dezvoltat de Microsoft
 
 XAML - este un limbaj declarativ dezvoltat tot de Microsoft inițial pentru WPF(Windows Presentation Foundation) mai târziu utilizat și la Xamarin Forms.
-![](https://github.com/CristiSandu/PhoneBook/Images/Imagine8.jpg)
+![](https://github.com/CristiSandu/PhoneBook/tree/master/Images/Imagine8.jpg)
 
 Baza de date are următoarea formă:
-![](https://github.com/CristiSandu/PhoneBook/Images/Imagine9.jpg)
+![](https://github.com/CristiSandu/PhoneBook/tree/master/Images/Imagine9.jpg)
 
 Poza de profil o salvez ca un șir de biți în baza de date.
 
