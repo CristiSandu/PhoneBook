@@ -1,6 +1,6 @@
 # PhoneBook
 
-### **2. STRUCTURA APLICAȚIEI**
+### **STRUCTURA APLICAȚIEI**
 
 Aplicația a fost realizată în Xamarin Forms pentru **Android** și **UWP** , iar ca și mediu de stocare persistentă sa folosit **SQLite**. Xamarin Forms cuprinde **C#** pentru partea de backend și **XAML** pentru partea de front end și definire a aspectului vizual.
 
@@ -285,7 +285,7 @@ Style-urile fiecărui tip de controler (culoare font text, background) le-am def
 
 ```
 
-### **4. Resurse hardware și software necesare**
+### **Resurse hardware și software necesare**
 
 - Un telefon cu Android 8.0+
 - Un PC cu Windows 10, XBOX sau orice dispozitiv care poate instala aplicații UWP - (Universal Windows Platform)
