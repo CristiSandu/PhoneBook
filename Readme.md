@@ -116,10 +116,10 @@ Limbaje folosite :
 
 C# - este un limbaj orientat obiect dezvoltat de Microsoft
 
-XAML - este un limbaj declarativ dezvoltat tot de Microsoft inițial pentru WPF(Windows Presentation Foundation) mai târziu utilizat și la Xamarin Forms.
+XAML - este un limbaj declarativ dezvoltat tot de Microsoft inițial pentru WPF(Windows Presentation Foundation) mai târziu utilizat și la Xamarin Forms.  
 ![](https://github.com/CristiSandu/PhoneBook/blob/master/Images/Imagine8.jpg)
 
-Baza de date are următoarea formă:
+Baza de date are următoarea formă:  
 ![](https://github.com/CristiSandu/PhoneBook/blob/master/Images/Imagine9.jpg)
 
 Poza de profil o salvez ca un șir de biți în baza de date.
